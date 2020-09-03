@@ -69,7 +69,9 @@ ui <- function(html, theme, fontSize){
             mode = "html",
             theme = theme,
             fontSize = fontSize,
-            height = "70vh"
+            height = "calc(100vh - 169px - 10px)",
+            tabSize = 2,
+            placeholder = "Paste some HTML code here or upload a HTML file."
           ),
           options = list(handles = "s")
         )
@@ -83,7 +85,8 @@ ui <- function(html, theme, fontSize){
             mode = "r",
             theme = theme,
             fontSize = fontSize,
-            height = "70vh"
+            height = "calc(100vh - 169px - 10px)",
+            tabSize = 2
           ),
           options = list(handles = "s")
         )
