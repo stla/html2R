@@ -104,17 +104,22 @@ server <- function(input, output, session){
   observeEvent(input[["file"]], {
     updateAceEditor(
       session, "aceHTML",
-      value = paste0(readLines(input[["file"]][["datapath"]]), collapse = "\n")
+      value = paste0(
+        suppressWarnings(readLines(input[["file"]][["datapath"]])),
+        collapse = "\n"
+      )
     )
     updateAceEditor(
       session, "aceR", value = ""
     )
+    session$sendCustomMessage("updateScrollBarH", "HTML")
   })
 
   observeEvent(input[["json"]], {
     updateAceEditor(
       session, "aceR", value = parse_html(input[["json"]])
     )
+    session$sendCustomMessage("updateScrollBarH", "R")
     # if(input[["prettyCode"]] != ""){
     #   flashMessage <- list(
     #     message = "Pretty code copied to the clipboard",
@@ -152,9 +157,9 @@ html2R <- function(file, theme = "cobalt", fontSize = 16){
   html <- if(missing(file)){
     ""
   }else{
-    paste0(readLines(file), collapse = "\n")
+    paste0(suppressWarnings(readLines(file)), collapse = "\n")
   }
-  requireNamespace("shiny")
+#  requireNamespace("shiny")
   requireNamespace("shinyAce")
   requireNamespace("shinythemes")
   requireNamespace("shinyjqui")
