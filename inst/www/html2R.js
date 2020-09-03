@@ -13,7 +13,7 @@ $(document).on("shiny:connected", function() {
           Reditor.renderer.$updateScrollBarH();
           break;
       }
-    }, 0);
+    }, 500);
   });
 });
 

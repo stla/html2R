@@ -2,7 +2,8 @@
 
 parse_attribute <- function(attr){
   as.character(glue(
-    '`{attr$key}` = "{attr$value}"'
+    '`{attr$key}` = {value}',
+    value = ifelse(length(attr$value), sprintf('"%s"', attr$value), TRUE)
   ))
 }
 
