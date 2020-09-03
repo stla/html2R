@@ -19,10 +19,13 @@ parse_content <- function(node, html){
           sprintf(
             "HTML(\n%s\n)",
             paste0(
-              sprintf(
-                '  "%s"',
-                outdent(
-                  gsub('"', '\\\\\"', node[["children"]][[1L]][["content"]])
+              c(
+                '  "\\n"',
+                sprintf(
+                  '  "%s\\n"',
+                  outdent(
+                    gsub('"', '\\\\\"', node[["children"]][[1L]][["content"]])
+                  )
                 )
               ),
               collapse = ",\n"
@@ -93,7 +96,10 @@ parse_node <- function(node){
       content = parse_content(node, html)
     )
   }else if(node[["type"]] == "text" && !isSep(node)){
-    code <- glue('"{node[["content"]]}"')
+    code <- glue(
+      '"{content}"',
+      content = gsub("(^\n|\n$)", "", node[["content"]])
+    )
   }
   as.character(code)
 }

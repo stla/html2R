@@ -1,3 +1,11 @@
+.well {
+  padding-bottom: 0;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
 #error {
   color: red;
   font-weight: bold;
@@ -10,7 +18,7 @@ h2.header {
   margin-bottom: 2px;
 }
 
-#parse {
+#parse, #copy {
   float: right;
   border-radius: 50%;
   border-color: yellow;
@@ -22,7 +30,7 @@ h2.header {
   font-size: 17px;
 }
 
-#parse:focus {
+#parse:focus, #copy:focus {
   outline: 0;
 }
 
@@ -56,4 +64,43 @@ h2.header {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   background-color: #D62929;
+}
+
+
+/* file input */
+.form-control[readonly] {
+  background-color: rgba(176, 196, 222, 0.5);
+  color: powderblue;
+  border: none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: powderblue !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: powderblue !important;
+}
+::-ms-input-placeholder { /* IE 10+ */
+  color: powderblue !important;
+}
+.btn-file {
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0 12px;
+  border-width: 2px;
+}
+.progress {
+  display: inline-table;
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.progress-bar {
+  font-family: Helvetica, sans-serif;
+  background-color: royalblue;
+  background-image: linear-gradient(90deg, darkslateblue 0%, royalblue 50%, rgba(0,255,255,0.5));
+  margin-top: 0;
+}
+.form-control {
+  height: 26px;
 }

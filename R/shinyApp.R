@@ -17,6 +17,18 @@ ui <- function(html, theme, fontSize){
 
     br(),
 
+    wellPanel(
+      fluidRow(
+        column(
+          width = 12,
+          fileInput(
+            "file", label = NULL,
+            buttonLabel = "Upload HTML file..."
+          )
+        )
+      )
+    ),
+
 
     fluidRow(
       column(
@@ -36,8 +48,12 @@ ui <- function(html, theme, fontSize){
         width = 6,
         fluidRow(
           column(
-            width = 12,
+            width = 6,
             h2(class = "header", "R code")
+          ),
+          column(
+            width = 6,
+            actionButton("copy", "Copy", class = "btn-danger btn-lg")
           )
         )
       )
@@ -53,7 +69,7 @@ ui <- function(html, theme, fontSize){
             mode = "html",
             theme = theme,
             fontSize = fontSize,
-            height = "400px"
+            height = "70vh"
           ),
           options = list(handles = "s")
         )
@@ -67,7 +83,7 @@ ui <- function(html, theme, fontSize){
             mode = "r",
             theme = theme,
             fontSize = fontSize,
-            height = "400px"
+            height = "70vh"
           ),
           options = list(handles = "s")
         )
@@ -82,10 +98,13 @@ server <- function(input, output, session){
 
   observe(print(hh <<- head(input[["json"]],2)))
 
-  observeEvent(input[["prettify"]], {
-    session$sendCustomMessage(
-      "code",
-      list(code = input[["code"]], parser = parser)
+  observeEvent(input[["file"]], {
+    updateAceEditor(
+      session, "aceHTML",
+      value = paste0(readLines(input[["file"]][["datapath"]]), collapse = "\n")
+    )
+    updateAceEditor(
+      session, "aceR", value = ""
     )
   })
 
@@ -127,8 +146,10 @@ server <- function(input, output, session){
 
 #' @export
 html2R <- function(file, theme = "cobalt", fontSize = 16){
-  if(!missing(file)){
-    html <- paste0(readLines(file), collapse = "\n")
+  html <- if(missing(file)){
+    ""
+  }else{
+    paste0(readLines(file), collapse = "\n")
   }
   requireNamespace("shiny")
   requireNamespace("shinyAce")
