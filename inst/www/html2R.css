@@ -1,0 +1,59 @@
+#error {
+  color: red;
+  font-weight: bold;
+}
+
+h2.header {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+#parse {
+  float: right;
+  border-radius: 50%;
+  border-color: yellow;
+  border-width: 2px;
+  padding: 6px 16px;
+  margin-bottom: 4px;
+  font-family: monospace;
+  letter-spacing: -1px;
+  font-size: 17px;
+}
+
+#parse:focus {
+  outline: 0;
+}
+
+#aceR,
+#aceHTML {
+  border-width: 2px;
+  border-radius: 0;
+}
+
+.alert .glyphicon {
+  font-size: 30px;
+}
+
+.alert .header strong {
+  font-size: 25px;
+}
+
+.ace_scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.ace_scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+}
+
+.ace_scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #D62929;
+}
