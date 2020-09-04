@@ -103,8 +103,7 @@ parse_node <- function(node){
   as.character(code)
 }
 
-#' @export
-#' @noRd
+#' @keywords internal
 parse_html <- function(html){
   paste0(
     Filter(function(x) x != "", vapply(html, parse_node, character(1L))),
