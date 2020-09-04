@@ -6,7 +6,7 @@ Authors@R: c(
     person("Stéphane", "Laurent", email = "laurent_step@outlook.fr", role = c("aut","cre")),
     person("Chris", "Andrejewski", role = c("ctb","cph"), comment = "'Himalaya' library")
   )
-Description: Provides a 'Shiny' app allowing to convert 'HTML' code to 'R' code.
+Description: Provides a 'Shiny' app allowing to convert 'HTML' code to 'R' code, for usage in a 'Shiny' UI.
 URL: https://github.com/stla/html2R
 BugReports: https://github.com/stla/html2R/issues
 License: GPL-3
