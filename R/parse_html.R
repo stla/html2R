@@ -4,7 +4,7 @@ parse_attribute <- function(attr){
   as.character(glue(
     '{key} = "{value}"',
     key = ifelse(
-      attr$key == "for" || grepl("-", attr$key),
+      attr$key == "for" || grepl("-", attr$key) || grepl(":", attr$key),
       sprintf("`%s`", attr$key), attr$key
     ),
     value = ifelse(length(attr$value), sprintf("%s", attr$value), "")
@@ -15,29 +15,31 @@ parse_content <- function(node, html){
   code <- if(html){
     gsub(
       "\n", "\n  ",
-      paste0(c(
+      paste0(na.omit(c(
         vapply(
           node[["attributes"]], parse_attribute, character(1L),
           USE.NAMES = FALSE
         ),
         if(length(node[["children"]])){
-          sprintf(
-            "HTML(\n%s\n)",
-            paste0(
-              c(
-                '  "\\n"',
-                sprintf(
-                  '  "%s\\n"',
-                  outdent(
-                    gsub('"', '\\\\\"', node[["children"]][[1L]][["content"]])
-                  )
-                )
-              ),
-              collapse = ",\n"
+          formattedContent <- outdent(
+            gsub('"', '\\\\\"', node[["children"]][[1L]][["content"]])
+          )
+          ifelse(
+            identical(formattedContent, ""),
+            NA_character_,
+            sprintf(
+              "HTML(\n%s\n)",
+              paste0(
+                c(
+                  '  "\\n"',
+                  sprintf('  "%s\\n"', formattedContent)
+                ),
+                collapse = ",\n"
+              )
             )
           )
         }
-      ), collapse = ",\n")
+      )), collapse = ",\n")
     )
   }else{
     gsub(
@@ -74,6 +76,7 @@ includeNode <- function(node){
 }
 
 outdent <- function(content){
+  if(grepl("^\\s*?$", content)) return("")
   lines <- strsplit(gsub("(^\n| *$)", "", content), "\n")[[1L]]
   i <- 1L
   while(i <= length(lines) && grepl("^\\s*?$", lines[i])){

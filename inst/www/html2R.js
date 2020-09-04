@@ -125,7 +125,10 @@ $(document).ready(function() {
                               }
                             );
                             $("#busy").hide();
-                            $(".row").css({"opacity": 1, "pointer-events": "auto"});
+                            $(".row").css({
+                              "opacity": 1,
+                              "pointer-events": "auto"
+                            });
                             HTMLeditor.setValue(prettyCode, true);
                             setTimeout(function() {
                               HTMLeditor.renderer.$updateScrollBarH();
@@ -134,7 +137,10 @@ $(document).ready(function() {
                             }, 0);
                           } catch(err) {
                             $("#busy").hide();
-                            $(".row").css({"opacity": 1, "pointer-events": "auto"});
+                            $(".row").css({
+                              "opacity": 1,
+                              "pointer-events": "auto"
+                            });
                             $.alert({
                               theme: "bootstrap",
                               title: "Failed to prettify!",
