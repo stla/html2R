@@ -1,11 +1,5 @@
-/*html, body {
-  height: 100%;
-}*/
-
 body {
-/*  min-height: 100%; */
   overflow: hidden;
-/*  background: radial-gradient(circle at center, #222, black 30%); */
 }
 
 #aceHTML, #aceR {

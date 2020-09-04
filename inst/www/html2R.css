@@ -6,11 +6,6 @@
   margin-bottom: 0;
 }
 
-#error {
-  color: red;
-  font-weight: bold;
-}
-
 h2.header {
   font-family: Verdana, Geneva, sans-serif;
   font-size: 35px;
@@ -38,14 +33,6 @@ h2.header {
 #aceHTML {
   border-width: 2px;
   border-radius: 0;
-}
-
-.alert .glyphicon {
-  font-size: 30px;
-}
-
-.alert .header strong {
-  font-size: 25px;
 }
 
 .ace_scrollbar::-webkit-scrollbar-track {
