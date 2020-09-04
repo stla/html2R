@@ -87,8 +87,7 @@ parse_node <- function(node){
   if(node[["type"]] == "element"){
     if(node[["tagName"]] == "!doctype") return("")
     if(node[["tagName"]] == "br") return("tags$br()")
-    html <- node[["tagName"]] %in% c("script", "style")# &&
-    #      length(node[["attributes"]]) == 0L
+    html <- node[["tagName"]] %in% c("script", "style")
     code <- glue(
       "tags${tag}({content})",
       tag = node[["tagName"]],
