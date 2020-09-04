@@ -101,19 +101,19 @@ $(document).ready(function() {
         error: function(e) {
           console.log("formatCodeApi error:", e);
           $.getScript(
-            "https://www.unpkg.com/prettier@2.0.5/standalone.js"
+            "https://www.unpkg.com/prettier@2.1.1/standalone.js"
           ).done(function(script, textStatus) {
             if(textStatus === "success") {
               $.getScript(
-                "https://www.unpkg.com/prettier@2.0.5/parser-babel.js"
+                "https://www.unpkg.com/prettier@2.1.1/parser-babel.js"
               ).done(function(script, textStatus) {
                 if(textStatus === "success") {
                   $.getScript(
-                    "https://www.unpkg.com/prettier@2.0.5/parser-postcss.js"
+                    "https://www.unpkg.com/prettier@2.1.1/parser-postcss.js"
                   ).done(function(script, textStatus) {
                     if(textStatus === "success") {
                       $.getScript(
-                        "https://www.unpkg.com/prettier@2.0.5/parser-html.js"
+                        "https://www.unpkg.com/prettier@2.1.1/parser-html.js"
                       ).done(function(script, textStatus) {
                         if(textStatus === "success") {
                           try {
