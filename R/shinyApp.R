@@ -11,8 +11,6 @@ ui <- function(html, theme, fontSize){
       tags$link(rel = "stylesheet", href = "wwwH2R/html2R.css")
       # tags$script(src = "wwwSP/bootstrap-flash-alert.js"),
       # tags$link(rel = "stylesheet", href = "wwwSP/animate.css"),
-      # tags$script(src = "wwwSP/shinyPrettier.js"),
-      # tags$link(rel = "stylesheet", href = "wwwSP/shinyPrettier.css")
     ),
 
     br(),
@@ -28,7 +26,6 @@ ui <- function(html, theme, fontSize){
         )
       )
     ),
-
 
     fluidRow(
       column(
@@ -120,53 +117,33 @@ server <- function(input, output, session){
       session, "aceR", value = parse_html(input[["json"]])
     )
     session$sendCustomMessage("updateScrollBarH", "R")
-    # if(input[["prettyCode"]] != ""){
-    #   flashMessage <- list(
-    #     message = "Pretty code copied to the clipboard",
-    #     title = "Copied!",
-    #     type = "success",
-    #     icon = "glyphicon glyphicon-check",
-    #     withTime = TRUE
-    #   )
-    #   session$sendCustomMessage("flash", flashMessage)
-    # }
-  })
-
-  observeEvent(input[["prettifyError"]], {
-    flashMessage <- list(
-      message = "Prettifier has failed",
-      title = "Error!",
-      type = "danger",
-      icon = "glyphicon glyphicon-flash",
-      withTime = TRUE,
-      animShow = "rotateInDownLeft",
-      animHide = "bounceOutRight",
-      position = list("bottom-left", list(0, 0.01))
-    )
-    session$sendCustomMessage("flash", flashMessage)
-  })
-
-  output[["error"]] <- renderPrint({
-    cat(input[["prettifyError"]])
   })
 
 }
 
+#' @title Launch the 'html2r' Shiny app
+#' @description Shiny app allowing to convert HTML code to R code.
+#' @param file path to a HTML file; can be missing
+#' @param theme,fontSize options passed to
+#'   \code{\link[shinyAce:aceEditor]{aceEditor}}
 #' @export
+#' @examples # launch the Shiny app without file ####
+#' if(interactive()) html2R()
+#'
+#' # launch the Shiny app with a file ####
+#' if(interactive()){
+#'   html2R(system.file("example.html", package = "html2R"))
+#' }
 html2R <- function(file, theme = "cobalt", fontSize = 16){
   html <- if(missing(file)){
     ""
   }else{
     paste0(suppressWarnings(readLines(file)), collapse = "\n")
   }
-#  requireNamespace("shiny")
   requireNamespace("shinyAce")
   requireNamespace("shinythemes")
   requireNamespace("shinyjqui")
-  if(!isNamespaceLoaded("html2R")) attachNamespace("html2R")
-  shinyApp(
-    ui(html, theme, fontSize),
-    server
-  )
+  if(!"html2R" %in% .packages()) attachNamespace("html2R")
+  shinyApp(ui(html, theme, fontSize), server)
 }
 

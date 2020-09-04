@@ -2,8 +2,8 @@
 
 parse_attribute <- function(attr){
   as.character(glue(
-    '`{attr$key}` = {value}',
-    value = ifelse(length(attr$value), sprintf('"%s"', attr$value), TRUE)
+    '`{attr$key}` = "{value}"',
+    value = ifelse(length(attr$value), sprintf("%s", attr$value), "")
   ))
 }
 
@@ -33,9 +33,7 @@ parse_content <- function(node, html){
             )
           )
         }
-      ),
-      collapse = ",\n"
-      )
+      ), collapse = ",\n")
     )
   }else{
     gsub(
@@ -99,13 +97,14 @@ parse_node <- function(node){
   }else if(node[["type"]] == "text" && !isSep(node)){
     code <- glue(
       '"{content}"',
-      content = gsub("(^\n|\n$)", "", node[["content"]])
+      content = gsub("(^\\s*|\\s*$)", "", node[["content"]])
     )
   }
   as.character(code)
 }
 
 #' @export
+#' @noRd
 parse_html <- function(html){
   paste0(
     Filter(function(x) x != "", vapply(html, parse_node, character(1L))),

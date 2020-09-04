@@ -1,0 +1,258 @@
+<div class="container-fluid">
+  <br />
+  <div class="well" style="display: none;">
+    <div class="row">
+      <div class="col-sm-1" id="switch-column">
+        <div
+          id="switch-container"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="Select two files at once (from the same folder) or select two files one by one."
+        >
+          <input id="switch" type="checkbox" />
+          <label for="switch"></label>
+        </div>
+      </div>
+      <div class="col-sm-9" id="fileInput">
+        <div data-display-if="!input.switch" data-ns-prefix="">
+          <div class="form-group shiny-input-container">
+            <label class="control-label shiny-label-null" for="files"></label>
+            <div class="input-group">
+              <label class="input-group-btn input-group-prepend">
+                <span class="btn btn-default btn-file">
+                  Select two files at once...
+                  <input
+                    id="files"
+                    name="files"
+                    type="file"
+                    style="display: none;"
+                    multiple="multiple"
+                  />
+                </span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="No file selected"
+                readonly="readonly"
+              />
+            </div>
+            <div
+              id="files_progress"
+              class="progress active shiny-file-input-progress"
+            >
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-display-if="input.switch"
+          data-ns-prefix=""
+          style="display: none;"
+        >
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group shiny-input-container">
+                <label
+                  class="control-label shiny-label-null"
+                  for="file1"
+                ></label>
+                <div class="input-group">
+                  <label class="input-group-btn input-group-prepend">
+                    <span class="btn btn-default btn-file">
+                      Select left file...
+                      <input
+                        id="file1"
+                        name="file1"
+                        type="file"
+                        style="display: none;"
+                      />
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="No file selected"
+                    readonly="readonly"
+                  />
+                </div>
+                <div
+                  id="file1_progress"
+                  class="progress active shiny-file-input-progress"
+                >
+                  <div class="progress-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group shiny-input-container">
+                <label
+                  class="control-label shiny-label-null"
+                  for="file2"
+                ></label>
+                <div class="input-group">
+                  <label class="input-group-btn input-group-prepend">
+                    <span class="btn btn-default btn-file">
+                      Select right file...
+                      <input
+                        id="file2"
+                        name="file2"
+                        type="file"
+                        style="display: none;"
+                      />
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="No file selected"
+                    readonly="readonly"
+                  />
+                </div>
+                <div
+                  id="file2_progress"
+                  class="progress active shiny-file-input-progress"
+                >
+                  <div class="progress-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <button
+          class="btn btn-default action-button btn-lg btn-block mainPanel"
+          id="swap"
+          type="button"
+        >
+          <i class="glyphicon glyphicon-transfer"></i>
+          Swap
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-10">
+        <div class="mainPanel">
+          <div class="form-group shiny-input-container">
+            <label
+              class="control-label shiny-label-null"
+              for="language"
+            ></label>
+            <div>
+              <select id="language" class="form-control"
+                ><option value="css" selected>CSS</option>
+                <option value="haskell">Haskell</option>
+                <option value="htmlmixed">HTML</option>
+                <option value="julia">Julia</option>
+                <option value="javascript">JavaScript</option>
+                <option value="jsx">JSX</option>
+                <option value="stex">LaTeX</option>
+                <option value="markdown">Markdown</option>
+                <option value="python">Python</option>
+                <option value="r">R</option>
+                <option value="markdown">Rmarkdown</option>
+                <option value="sas">SAS</option>
+                <option value="sql">SQL</option>
+                <option value="xml">SVG</option>
+                <option value="text/plain">Text</option>
+                <option value="xml">XML</option></select
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <button
+          class="btn btn-default action-button btn-sm btn-block mainPanel"
+          data-placement="left"
+          data-toggle="tooltip"
+          id="close"
+          title="Close this panel to gain some place. You can vertically resize the editor windows by dragging the bottom border."
+          type="button"
+        >
+          Close this panel
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row mainPanel">
+    <div class="col-sm-12">
+      <div class="row" id="diffButtons-row">
+        <div class="col-sm-1">
+          <button
+            id="copyLeft"
+            type="button"
+            class="btn btn-default action-button"
+          >
+            Copy
+          </button>
+        </div>
+        <div class="col-sm-4 files">
+          <p id="fileLeft"></p>
+        </div>
+        <div
+          class="col-sm-2"
+          id="diffButtons"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="previous difference / next difference "
+        >
+          <button
+            id="prevDiff"
+            type="button"
+            class="btn btn-default action-button"
+          >
+            <i class="glyphicon glyphicon-triangle-top"></i>
+          </button>
+          <button
+            id="nextDiff"
+            type="button"
+            class="btn btn-default action-button"
+          >
+            <i class="glyphicon glyphicon-triangle-bottom"></i>
+          </button>
+        </div>
+        <div class="col-sm-4 files">
+          <p id="fileRight"></p>
+        </div>
+        <div class="col-sm-1">
+          <button
+            id="copyRight"
+            type="button"
+            class="btn btn-default action-button"
+          >
+            Copy
+          </button>
+        </div>
+      </div>
+      <div id="mergely-container">
+        <div id="mergely"></div>
+      </div>
+    </div>
+  </div>
+  <div class="sky">
+    <div class="night">
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+    </div>
+  </div>
+</div>
