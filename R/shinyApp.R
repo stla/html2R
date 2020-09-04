@@ -9,9 +9,9 @@ ui <- function(html, theme, fontSize){
       tags$script(src = "wwwH2R/himalaya.js"),
       tags$script(src = "wwwH2R/html2R.js"),
       tags$link(rel = "stylesheet", href = "wwwH2R/html2R.css"),
-      tags$link(rel = "stylesheet", href = "wwwH2R/particles.css")
-      # tags$script(src = "wwwSP/bootstrap-flash-alert.js"),
-      # tags$link(rel = "stylesheet", href = "wwwSP/animate.css"),
+      tags$link(rel = "stylesheet", href = "wwwH2R/particles.css"),
+      tags$link(rel = "stylesheet", href = "wwwH2R/jquery-confirm.min.css"),
+      tags$script(src = "wwwH2R/jquery-confirm.min.js")
     ),
 
     if(html == ""){
@@ -44,7 +44,11 @@ ui <- function(html, theme, fontSize){
             h2(class = "header", "HTML code")
           ),
           column(
-            width = 6,
+            width = 3,
+            actionButton("prettify", "Prettify", class = "btn-danger btn-lg")
+          ),
+          column(
+            width = 3,
             actionButton("parse", "Convert", class = "btn-danger btn-lg")
           )
         )
