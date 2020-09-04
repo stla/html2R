@@ -87,3 +87,32 @@ h2.header {
 .form-control {
   height: 26px;
 }
+
+
+#busy {
+  display: none;
+  position: absolute;
+  top: 25vh;
+  left: calc(50% - 25vh);
+  z-index: 1000;
+  border: 10vh solid gold;
+  border-radius: 50%;
+  border-top: 10vh solid darkmagenta;
+  width: 50vh;
+  height: 50vh;
+  -webkit-animation: spin 2s ease-in-out infinite; /* Safari */
+  -moz-animation: spin 2s ease-in-out infinite;
+  animation: spin 2s ease-in-out infinite;
+}
+@-webkit-keyframes spin { /* Safari */
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+  0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

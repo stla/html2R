@@ -54,13 +54,15 @@ $(document).ready(function() {
 
   $("#prettify").on("click", function() {
     if(navigator.onLine) {
+      $("#busy").show();
       $.post({
         url: "http://aozozo.com:600/html",
         contentType: "text/plain; charset=UTF-8",
         data: HTMLeditor.getValue(),
         success: function(data) {
+          $("#busy").hide();
           var formattedCode = decodeURIComponent(data);
-          HTMLeditor.setValue(formattedCode);
+          HTMLeditor.setValue(formattedCode, true);
           setTimeout(function() {
             HTMLeditor.renderer.$updateScrollBarH();
             HTMLeditor.renderer.scrollToX(0);
@@ -68,20 +70,69 @@ $(document).ready(function() {
           }, 0);
         },
         error: function(e) {
-          console.log(e);
-          $.alert({
-            theme: "bootstrap",
-            title: "Failed to prettify!",
-            content: "This may be due to invalid HTML code.",
-            animation: "scale",
-            closeAnimation: "scale",
-            buttons: {
-              okay: {
-                text: "Okay",
-                btnClass: "btn-blue"
-              }
+          console.log("formatCodeApi error:", e);
+          $.getScript(
+            "https://www.unpkg.com/prettier@2.0.5/standalone.js"
+          ).done(function(script, textStatus) {
+            if(textStatus === "success") {
+              $.getScript(
+                "https://www.unpkg.com/prettier@2.0.5/parser-babel.js"
+              ).done(function(script, textStatus) {
+                if(textStatus === "success") {
+                  $.getScript(
+                    "https://www.unpkg.com/prettier@2.0.5/parser-postcss.js"
+                  ).done(function(script, textStatus) {
+                    if(textStatus === "success") {
+                      $.getScript(
+                        "https://www.unpkg.com/prettier@2.0.5/parser-html.js"
+                      ).done(function(script, textStatus) {
+                        if(textStatus === "success") {
+                          try {
+                            var prettyCode = prettier.format(
+                              HTMLeditor.getValue(),
+                              {
+                                parser: "html",
+                                plugins: prettierPlugins
+                              }
+                            );
+                            $("#busy").hide();
+                            HTMLeditor.setValue(prettyCode, true);
+                          } catch(err) {
+                            $("#busy").hide();
+                            $.alert({
+                              theme: "bootstrap",
+                              title: "Failed to prettify!",
+                              content: "This may be due to invalid HTML code.",
+                              animation: "scale",
+                              closeAnimation: "scale",
+                              buttons: {
+                                okay: {
+                                  text: "Okay",
+                                  btnClass: "btn-blue"
+                                }
+                              }
+                            });
+                          }
+                        }
+                      }).fail(function(jqxhr, settings, exception) {
+                        console.log("exception:", exception);
+                        $("#busy").hide();
+                      });
+                    }
+                  }).fail(function(jqxhr, settings, exception) {
+                    console.log("exception:", exception);
+                    $("#busy").hide();
+                  });
+                }
+              }).fail(function(jqxhr, settings, exception) {
+                console.log("exception:", exception);
+                $("#busy").hide();
+              });
             }
-          });
+          }).fail(function(jqxhr, settings, exception) {
+						console.log("exception:", exception);
+						$("#busy").hide();
+					});
         }
       });
     } else {

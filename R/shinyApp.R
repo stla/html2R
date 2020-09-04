@@ -21,6 +21,8 @@ ui <- function(html, theme, fontSize){
       )
     },
 
+    tags$div(id = "busy"),
+
     br(),
 
     wellPanel(
@@ -62,7 +64,7 @@ ui <- function(html, theme, fontSize){
           ),
           column(
             width = 6,
-            actionButton("copy", "Copy", class = "btn-danger btn-lg")
+            actionButton("copy", "Copy to clipboard", class = "btn-danger btn-lg")
           )
         )
       )
