@@ -121,7 +121,8 @@ $(document).ready(function() {
                               HTMLeditor.getValue(),
                               {
                                 parser: "html",
-                                plugins: prettierPlugins
+                                plugins: prettierPlugins,
+                                trailingComma: "none"
                               }
                             );
                             $("#busy").hide();
