@@ -103,7 +103,7 @@ ui <- function(html, theme, fontSize){
         )
       )
     )
-      )
+  )
 
 }
 

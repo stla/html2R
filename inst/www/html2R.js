@@ -55,12 +55,14 @@ $(document).ready(function() {
   $("#prettify").on("click", function() {
     if(navigator.onLine) {
       $("#busy").show();
+      $(".row").css({"opacity": 0.5, "pointer-events": "none"});
       $.post({
         url: "http://aozozo.com:600/html",
         contentType: "text/plain; charset=UTF-8",
         data: HTMLeditor.getValue(),
         success: function(data) {
           $("#busy").hide();
+          $(".row").css({"opacity": 1, "pointer-events": "auto"});
           var formattedCode = decodeURIComponent(data);
           HTMLeditor.setValue(formattedCode, true);
           setTimeout(function() {
@@ -96,9 +98,11 @@ $(document).ready(function() {
                               }
                             );
                             $("#busy").hide();
+                            $(".row").css({"opacity": 1, "pointer-events": "auto"});
                             HTMLeditor.setValue(prettyCode, true);
                           } catch(err) {
                             $("#busy").hide();
+                            $(".row").css({"opacity": 1, "pointer-events": "auto"});
                             $.alert({
                               theme: "bootstrap",
                               title: "Failed to prettify!",
@@ -117,21 +121,25 @@ $(document).ready(function() {
                       }).fail(function(jqxhr, settings, exception) {
                         console.log("exception:", exception);
                         $("#busy").hide();
+                        $(".row").css({"opacity": 1, "pointer-events": "auto"});
                       });
                     }
                   }).fail(function(jqxhr, settings, exception) {
                     console.log("exception:", exception);
                     $("#busy").hide();
+                    $(".row").css({"opacity": 1, "pointer-events": "auto"});
                   });
                 }
               }).fail(function(jqxhr, settings, exception) {
                 console.log("exception:", exception);
                 $("#busy").hide();
+                $(".row").css({"opacity": 1, "pointer-events": "auto"});
               });
             }
           }).fail(function(jqxhr, settings, exception) {
 						console.log("exception:", exception);
 						$("#busy").hide();
+            $(".row").css({"opacity": 1, "pointer-events": "auto"});
 					});
         }
       });
