@@ -1,5 +1,6 @@
 var HTMLeditor, Reditor;
 
+
 $(document).on("shiny:connected", function() {
   HTMLeditor = ace.edit("aceHTML");
   Reditor = ace.edit("aceR");
@@ -8,14 +9,19 @@ $(document).on("shiny:connected", function() {
       switch(editor) {
         case "HTML":
           HTMLeditor.renderer.$updateScrollBarH();
+          HTMLeditor.renderer.scrollToX(0);
+          HTMLeditor.renderer.scrollToY(0);
           break;
         case "R":
           Reditor.renderer.$updateScrollBarH();
+          Reditor.renderer.scrollToX(0);
+          Reditor.renderer.scrollToY(0);
           break;
       }
-    }, 500);
+    }, 0);
   });
 });
+
 
 $(document).ready(function() {
 

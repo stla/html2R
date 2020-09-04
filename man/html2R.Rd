@@ -2,7 +2,7 @@
 % Please edit documentation in R/shinyApp.R
 \name{html2R}
 \alias{html2R}
-\title{Launch the 'html2r' Shiny app}
+\title{Launch the 'html2R' Shiny app}
 \usage{
 html2R(file, theme = "cobalt", fontSize = 16)
 }

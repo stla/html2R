@@ -109,19 +109,25 @@ server <- function(input, output, session){
     updateAceEditor(
       session, "aceR", value = ""
     )
+  }, priority = 2)
+
+  observeEvent(input[["file"]], {
     session$sendCustomMessage("updateScrollBarH", "HTML")
-  })
+  }, priority = 1)
 
   observeEvent(input[["json"]], {
     updateAceEditor(
       session, "aceR", value = parse_html(input[["json"]])
     )
+  }, priority = 2)
+
+  observeEvent(input[["json"]], {
     session$sendCustomMessage("updateScrollBarH", "R")
-  })
+  }, priority = 1)
 
 }
 
-#' @title Launch the 'html2r' Shiny app
+#' @title Launch the 'html2R' Shiny app
 #' @description Shiny app allowing to convert HTML code to R code.
 #' @param file path to a HTML file; can be missing
 #' @param theme,fontSize options passed to
