@@ -98,6 +98,9 @@ h2.header {
   border: 10vh solid gold;
   border-radius: 50%;
   border-top: 10vh solid darkmagenta;
+  -webkit-box-shadow: 0 0 20vh -2px skyblue, inset 0 0 10vh -2px skyblue;
+  -moz-box-shadow: 0 0 20vh -2px skyblue, inset 0 0 10vh -2px skyblue;
+  box-shadow: 0 0 20vh -2px skyblue, inset 0 0 10vh -2px skyblue;
   width: 50vh;
   height: 50vh;
   -webkit-animation: spin 2s ease-in-out infinite; /* Safari */
