@@ -8,6 +8,11 @@
     "wwwH2R",
     system.file("www", package = "html2R")
   )
+  if(interactive()){
+    packageStartupMessage(
+      "Tip: you can vertically resize the editors by dragging their bottom border."
+    )
+  }
 }
 
 #' @importFrom shiny removeResourcePath
