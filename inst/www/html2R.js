@@ -25,10 +25,19 @@ $(document).on("shiny:connected", function() {
 
 $(document).ready(function() {
 
-  document.getElementById("file").addEventListener("change", function() {
+  $("#aceHTML").one("click", function() {
+    $("#background").hide();
+    $("#aceHTML,#aceR").css("opacity", 1);
+    $("body").css("overflow", "auto");
+  });
+
+  $("#file").one("change", function() {
     $("label[for=file]").next().find(".form-control")
       .css("border-bottom-right-radius", 0);
     $(this).parent().css("border-bottom-left-radius", 0);
+    $("#background").hide();
+    $("#aceHTML,#aceR").css("opacity", 1);
+    $("body").css("overflow", "auto");
     return true;
   });
 

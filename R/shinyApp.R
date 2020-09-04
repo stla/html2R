@@ -8,10 +8,18 @@ ui <- function(html, theme, fontSize){
     tags$head(
       tags$script(src = "wwwH2R/himalaya.js"),
       tags$script(src = "wwwH2R/html2R.js"),
-      tags$link(rel = "stylesheet", href = "wwwH2R/html2R.css")
+      tags$link(rel = "stylesheet", href = "wwwH2R/html2R.css"),
+      tags$link(rel = "stylesheet", href = "wwwH2R/particles.css")
       # tags$script(src = "wwwSP/bootstrap-flash-alert.js"),
       # tags$link(rel = "stylesheet", href = "wwwSP/animate.css"),
     ),
+
+    if(html == ""){
+      do.call(
+        function(...) tags$div(id = "background", ...),
+        rep(list(tags$div(class = "c")), 200L)
+      )
+    },
 
     br(),
 
@@ -89,7 +97,7 @@ ui <- function(html, theme, fontSize){
         )
       )
     )
-  )
+      )
 
 }
 
