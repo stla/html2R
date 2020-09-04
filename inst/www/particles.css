@@ -31,7 +31,7 @@ body {
 }
 
 .c:nth-child(1) {
-  animation: anim1 1.5s infinite alternate;
+  animation: anim1 5s infinite alternate;
   animation-delay: -0.015s;
   background: #d4ff00;
   background: radial-gradient(circle at top left, #e1ff4d, #d4ff00);
@@ -49,7 +49,7 @@ body {
   }
 }
 .c:nth-child(2) {
-  animation: anim2 1.5s infinite alternate;
+  animation: anim2 5s infinite alternate;
   animation-delay: -0.03s;
   background: #d4ff00;
   background: radial-gradient(circle at top left, #e1ff4d, #d4ff00);
@@ -67,7 +67,7 @@ body {
   }
 }
 .c:nth-child(3) {
-  animation: anim3 1.5s infinite alternate;
+  animation: anim3 5s infinite alternate;
   animation-delay: -0.045s;
   background: #d3ff00;
   background: radial-gradient(circle at top left, #e0ff4d, #d3ff00);
@@ -85,7 +85,7 @@ body {
   }
 }
 .c:nth-child(4) {
-  animation: anim4 1.5s infinite alternate;
+  animation: anim4 5s infinite alternate;
   animation-delay: -0.06s;
   background: #d3ff00;
   background: radial-gradient(circle at top left, #e0ff4d, #d3ff00);
@@ -103,7 +103,7 @@ body {
   }
 }
 .c:nth-child(5) {
-  animation: anim5 1.5s infinite alternate;
+  animation: anim5 5s infinite alternate;
   animation-delay: -0.075s;
   background: #d2ff00;
   background: radial-gradient(circle at top left, #e0ff4d, #d2ff00);
@@ -121,7 +121,7 @@ body {
   }
 }
 .c:nth-child(6) {
-  animation: anim6 1.5s infinite alternate;
+  animation: anim6 5s infinite alternate;
   animation-delay: -0.09s;
   background: #d2ff00;
   background: radial-gradient(circle at top left, #dfff4d, #d2ff00);
@@ -139,7 +139,7 @@ body {
   }
 }
 .c:nth-child(7) {
-  animation: anim7 1.5s infinite alternate;
+  animation: anim7 5s infinite alternate;
   animation-delay: -0.105s;
   background: #d2ff00;
   background: radial-gradient(circle at top left, #dfff4d, #d2ff00);
@@ -157,7 +157,7 @@ body {
   }
 }
 .c:nth-child(8) {
-  animation: anim8 1.5s infinite alternate;
+  animation: anim8 5s infinite alternate;
   animation-delay: -0.12s;
   background: #d1ff00;
   background: radial-gradient(circle at top left, #dfff4d, #d1ff00);
@@ -175,7 +175,7 @@ body {
   }
 }
 .c:nth-child(9) {
-  animation: anim9 1.5s infinite alternate;
+  animation: anim9 5s infinite alternate;
   animation-delay: -0.135s;
   background: #d1ff00;
   background: radial-gradient(circle at top left, #dfff4d, #d1ff00);
@@ -193,7 +193,7 @@ body {
   }
 }
 .c:nth-child(10) {
-  animation: anim10 1.5s infinite alternate;
+  animation: anim10 5s infinite alternate;
   animation-delay: -0.15s;
   background: #d0ff00;
   background: radial-gradient(circle at top left, #deff4d, #d0ff00);
@@ -211,7 +211,7 @@ body {
   }
 }
 .c:nth-child(11) {
-  animation: anim11 1.5s infinite alternate;
+  animation: anim11 5s infinite alternate;
   animation-delay: -0.165s;
   background: #d0ff00;
   background: radial-gradient(circle at top left, #deff4d, #d0ff00);
@@ -229,7 +229,7 @@ body {
   }
 }
 .c:nth-child(12) {
-  animation: anim12 1.5s infinite alternate;
+  animation: anim12 5s infinite alternate;
   animation-delay: -0.18s;
   background: #cfff00;
   background: radial-gradient(circle at top left, #deff4d, #cfff00);
@@ -247,7 +247,7 @@ body {
   }
 }
 .c:nth-child(13) {
-  animation: anim13 1.5s infinite alternate;
+  animation: anim13 5s infinite alternate;
   animation-delay: -0.195s;
   background: #cfff00;
   background: radial-gradient(circle at top left, #ddff4d, #cfff00);
@@ -265,7 +265,7 @@ body {
   }
 }
 .c:nth-child(14) {
-  animation: anim14 1.5s infinite alternate;
+  animation: anim14 5s infinite alternate;
   animation-delay: -0.21s;
   background: #cfff00;
   background: radial-gradient(circle at top left, #ddff4d, #cfff00);
@@ -283,7 +283,7 @@ body {
   }
 }
 .c:nth-child(15) {
-  animation: anim15 1.5s infinite alternate;
+  animation: anim15 5s infinite alternate;
   animation-delay: -0.225s;
   background: #ceff00;
   background: radial-gradient(circle at top left, #ddff4d, #ceff00);
@@ -301,7 +301,7 @@ body {
   }
 }
 .c:nth-child(16) {
-  animation: anim16 1.5s infinite alternate;
+  animation: anim16 5s infinite alternate;
   animation-delay: -0.24s;
   background: #ceff00;
   background: radial-gradient(circle at top left, #dcff4d, #ceff00);
@@ -319,7 +319,7 @@ body {
   }
 }
 .c:nth-child(17) {
-  animation: anim17 1.5s infinite alternate;
+  animation: anim17 5s infinite alternate;
   animation-delay: -0.255s;
   background: #cdff00;
   background: radial-gradient(circle at top left, #dcff4d, #cdff00);
@@ -337,7 +337,7 @@ body {
   }
 }
 .c:nth-child(18) {
-  animation: anim18 1.5s infinite alternate;
+  animation: anim18 5s infinite alternate;
   animation-delay: -0.27s;
   background: #cdff00;
   background: radial-gradient(circle at top left, #dcff4d, #cdff00);
@@ -355,7 +355,7 @@ body {
   }
 }
 .c:nth-child(19) {
-  animation: anim19 1.5s infinite alternate;
+  animation: anim19 5s infinite alternate;
   animation-delay: -0.285s;
   background: #ccff00;
   background: radial-gradient(circle at top left, #dcff4d, #ccff00);
@@ -373,7 +373,7 @@ body {
   }
 }
 .c:nth-child(20) {
-  animation: anim20 1.5s infinite alternate;
+  animation: anim20 5s infinite alternate;
   animation-delay: -0.3s;
   background: #ccff00;
   background: radial-gradient(circle at top left, #dbff4d, #ccff00);
@@ -391,7 +391,7 @@ body {
   }
 }
 .c:nth-child(21) {
-  animation: anim21 1.5s infinite alternate;
+  animation: anim21 5s infinite alternate;
   animation-delay: -0.315s;
   background: #ccff00;
   background: radial-gradient(circle at top left, #dbff4d, #ccff00);
@@ -409,7 +409,7 @@ body {
   }
 }
 .c:nth-child(22) {
-  animation: anim22 1.5s infinite alternate;
+  animation: anim22 5s infinite alternate;
   animation-delay: -0.33s;
   background: #cbff00;
   background: radial-gradient(circle at top left, #dbff4d, #cbff00);
@@ -427,7 +427,7 @@ body {
   }
 }
 .c:nth-child(23) {
-  animation: anim23 1.5s infinite alternate;
+  animation: anim23 5s infinite alternate;
   animation-delay: -0.345s;
   background: #cbff00;
   background: radial-gradient(circle at top left, #daff4d, #cbff00);
@@ -445,7 +445,7 @@ body {
   }
 }
 .c:nth-child(24) {
-  animation: anim24 1.5s infinite alternate;
+  animation: anim24 5s infinite alternate;
   animation-delay: -0.36s;
   background: #caff00;
   background: radial-gradient(circle at top left, #daff4d, #caff00);
@@ -463,7 +463,7 @@ body {
   }
 }
 .c:nth-child(25) {
-  animation: anim25 1.5s infinite alternate;
+  animation: anim25 5s infinite alternate;
   animation-delay: -0.375s;
   background: #caff00;
   background: radial-gradient(circle at top left, #daff4d, #caff00);
@@ -481,7 +481,7 @@ body {
   }
 }
 .c:nth-child(26) {
-  animation: anim26 1.5s infinite alternate;
+  animation: anim26 5s infinite alternate;
   animation-delay: -0.39s;
   background: #c9ff00;
   background: radial-gradient(circle at top left, #daff4d, #c9ff00);
@@ -499,7 +499,7 @@ body {
   }
 }
 .c:nth-child(27) {
-  animation: anim27 1.5s infinite alternate;
+  animation: anim27 5s infinite alternate;
   animation-delay: -0.405s;
   background: #c9ff00;
   background: radial-gradient(circle at top left, #d9ff4d, #c9ff00);
@@ -517,7 +517,7 @@ body {
   }
 }
 .c:nth-child(28) {
-  animation: anim28 1.5s infinite alternate;
+  animation: anim28 5s infinite alternate;
   animation-delay: -0.42s;
   background: #c9ff00;
   background: radial-gradient(circle at top left, #d9ff4d, #c9ff00);
@@ -535,7 +535,7 @@ body {
   }
 }
 .c:nth-child(29) {
-  animation: anim29 1.5s infinite alternate;
+  animation: anim29 5s infinite alternate;
   animation-delay: -0.435s;
   background: #c8ff00;
   background: radial-gradient(circle at top left, #d9ff4d, #c8ff00);
@@ -553,7 +553,7 @@ body {
   }
 }
 .c:nth-child(30) {
-  animation: anim30 1.5s infinite alternate;
+  animation: anim30 5s infinite alternate;
   animation-delay: -0.45s;
   background: #c8ff00;
   background: radial-gradient(circle at top left, #d8ff4d, #c8ff00);
@@ -571,7 +571,7 @@ body {
   }
 }
 .c:nth-child(31) {
-  animation: anim31 1.5s infinite alternate;
+  animation: anim31 5s infinite alternate;
   animation-delay: -0.465s;
   background: #c7ff00;
   background: radial-gradient(circle at top left, #d8ff4d, #c7ff00);
@@ -589,7 +589,7 @@ body {
   }
 }
 .c:nth-child(32) {
-  animation: anim32 1.5s infinite alternate;
+  animation: anim32 5s infinite alternate;
   animation-delay: -0.48s;
   background: #c7ff00;
   background: radial-gradient(circle at top left, #d8ff4d, #c7ff00);
@@ -607,7 +607,7 @@ body {
   }
 }
 .c:nth-child(33) {
-  animation: anim33 1.5s infinite alternate;
+  animation: anim33 5s infinite alternate;
   animation-delay: -0.495s;
   background: #c6ff00;
   background: radial-gradient(circle at top left, #d7ff4d, #c6ff00);
@@ -625,7 +625,7 @@ body {
   }
 }
 .c:nth-child(34) {
-  animation: anim34 1.5s infinite alternate;
+  animation: anim34 5s infinite alternate;
   animation-delay: -0.51s;
   background: #c6ff00;
   background: radial-gradient(circle at top left, #d7ff4d, #c6ff00);
@@ -643,7 +643,7 @@ body {
   }
 }
 .c:nth-child(35) {
-  animation: anim35 1.5s infinite alternate;
+  animation: anim35 5s infinite alternate;
   animation-delay: -0.525s;
   background: #c6ff00;
   background: radial-gradient(circle at top left, #d7ff4d, #c6ff00);
@@ -661,7 +661,7 @@ body {
   }
 }
 .c:nth-child(36) {
-  animation: anim36 1.5s infinite alternate;
+  animation: anim36 5s infinite alternate;
   animation-delay: -0.54s;
   background: #c5ff00;
   background: radial-gradient(circle at top left, #d7ff4d, #c5ff00);
@@ -679,7 +679,7 @@ body {
   }
 }
 .c:nth-child(37) {
-  animation: anim37 1.5s infinite alternate;
+  animation: anim37 5s infinite alternate;
   animation-delay: -0.555s;
   background: #c5ff00;
   background: radial-gradient(circle at top left, #d6ff4d, #c5ff00);
@@ -697,7 +697,7 @@ body {
   }
 }
 .c:nth-child(38) {
-  animation: anim38 1.5s infinite alternate;
+  animation: anim38 5s infinite alternate;
   animation-delay: -0.57s;
   background: #c4ff00;
   background: radial-gradient(circle at top left, #d6ff4d, #c4ff00);
@@ -715,7 +715,7 @@ body {
   }
 }
 .c:nth-child(39) {
-  animation: anim39 1.5s infinite alternate;
+  animation: anim39 5s infinite alternate;
   animation-delay: -0.585s;
   background: #c4ff00;
   background: radial-gradient(circle at top left, #d6ff4d, #c4ff00);
@@ -733,7 +733,7 @@ body {
   }
 }
 .c:nth-child(40) {
-  animation: anim40 1.5s infinite alternate;
+  animation: anim40 5s infinite alternate;
   animation-delay: -0.6s;
   background: #c4ff00;
   background: radial-gradient(circle at top left, #d5ff4d, #c4ff00);
@@ -751,7 +751,7 @@ body {
   }
 }
 .c:nth-child(41) {
-  animation: anim41 1.5s infinite alternate;
+  animation: anim41 5s infinite alternate;
   animation-delay: -0.615s;
   background: #c3ff00;
   background: radial-gradient(circle at top left, #d5ff4d, #c3ff00);
@@ -769,7 +769,7 @@ body {
   }
 }
 .c:nth-child(42) {
-  animation: anim42 1.5s infinite alternate;
+  animation: anim42 5s infinite alternate;
   animation-delay: -0.63s;
   background: #c3ff00;
   background: radial-gradient(circle at top left, #d5ff4d, #c3ff00);
@@ -787,7 +787,7 @@ body {
   }
 }
 .c:nth-child(43) {
-  animation: anim43 1.5s infinite alternate;
+  animation: anim43 5s infinite alternate;
   animation-delay: -0.645s;
   background: #c2ff00;
   background: radial-gradient(circle at top left, #d4ff4d, #c2ff00);
@@ -805,7 +805,7 @@ body {
   }
 }
 .c:nth-child(44) {
-  animation: anim44 1.5s infinite alternate;
+  animation: anim44 5s infinite alternate;
   animation-delay: -0.66s;
   background: #c2ff00;
   background: radial-gradient(circle at top left, #d4ff4d, #c2ff00);
@@ -823,7 +823,7 @@ body {
   }
 }
 .c:nth-child(45) {
-  animation: anim45 1.5s infinite alternate;
+  animation: anim45 5s infinite alternate;
   animation-delay: -0.675s;
   background: #c1ff00;
   background: radial-gradient(circle at top left, #d4ff4d, #c1ff00);
@@ -841,7 +841,7 @@ body {
   }
 }
 .c:nth-child(46) {
-  animation: anim46 1.5s infinite alternate;
+  animation: anim46 5s infinite alternate;
   animation-delay: -0.69s;
   background: #c1ff00;
   background: radial-gradient(circle at top left, #d4ff4d, #c1ff00);
@@ -859,7 +859,7 @@ body {
   }
 }
 .c:nth-child(47) {
-  animation: anim47 1.5s infinite alternate;
+  animation: anim47 5s infinite alternate;
   animation-delay: -0.705s;
   background: #c1ff00;
   background: radial-gradient(circle at top left, #d3ff4d, #c1ff00);
@@ -877,7 +877,7 @@ body {
   }
 }
 .c:nth-child(48) {
-  animation: anim48 1.5s infinite alternate;
+  animation: anim48 5s infinite alternate;
   animation-delay: -0.72s;
   background: #c0ff00;
   background: radial-gradient(circle at top left, #d3ff4d, #c0ff00);
@@ -895,7 +895,7 @@ body {
   }
 }
 .c:nth-child(49) {
-  animation: anim49 1.5s infinite alternate;
+  animation: anim49 5s infinite alternate;
   animation-delay: -0.735s;
   background: #c0ff00;
   background: radial-gradient(circle at top left, #d3ff4d, #c0ff00);
@@ -913,7 +913,7 @@ body {
   }
 }
 .c:nth-child(50) {
-  animation: anim50 1.5s infinite alternate;
+  animation: anim50 5s infinite alternate;
   animation-delay: -0.75s;
   background: #bfff00;
   background: radial-gradient(circle at top left, #d2ff4d, #bfff00);
@@ -931,7 +931,7 @@ body {
   }
 }
 .c:nth-child(51) {
-  animation: anim51 1.5s infinite alternate;
+  animation: anim51 5s infinite alternate;
   animation-delay: -0.765s;
   background: #bfff00;
   background: radial-gradient(circle at top left, #d2ff4d, #bfff00);
@@ -949,7 +949,7 @@ body {
   }
 }
 .c:nth-child(52) {
-  animation: anim52 1.5s infinite alternate;
+  animation: anim52 5s infinite alternate;
   animation-delay: -0.78s;
   background: #beff00;
   background: radial-gradient(circle at top left, #d2ff4d, #beff00);
@@ -967,7 +967,7 @@ body {
   }
 }
 .c:nth-child(53) {
-  animation: anim53 1.5s infinite alternate;
+  animation: anim53 5s infinite alternate;
   animation-delay: -0.795s;
   background: #beff00;
   background: radial-gradient(circle at top left, #d1ff4d, #beff00);
@@ -985,7 +985,7 @@ body {
   }
 }
 .c:nth-child(54) {
-  animation: anim54 1.5s infinite alternate;
+  animation: anim54 5s infinite alternate;
   animation-delay: -0.81s;
   background: #beff00;
   background: radial-gradient(circle at top left, #d1ff4d, #beff00);
@@ -1003,7 +1003,7 @@ body {
   }
 }
 .c:nth-child(55) {
-  animation: anim55 1.5s infinite alternate;
+  animation: anim55 5s infinite alternate;
   animation-delay: -0.825s;
   background: #bdff00;
   background: radial-gradient(circle at top left, #d1ff4d, #bdff00);
@@ -1021,7 +1021,7 @@ body {
   }
 }
 .c:nth-child(56) {
-  animation: anim56 1.5s infinite alternate;
+  animation: anim56 5s infinite alternate;
   animation-delay: -0.84s;
   background: #bdff00;
   background: radial-gradient(circle at top left, #d1ff4d, #bdff00);
@@ -1039,7 +1039,7 @@ body {
   }
 }
 .c:nth-child(57) {
-  animation: anim57 1.5s infinite alternate;
+  animation: anim57 5s infinite alternate;
   animation-delay: -0.855s;
   background: #bcff00;
   background: radial-gradient(circle at top left, #d0ff4d, #bcff00);
@@ -1057,7 +1057,7 @@ body {
   }
 }
 .c:nth-child(58) {
-  animation: anim58 1.5s infinite alternate;
+  animation: anim58 5s infinite alternate;
   animation-delay: -0.87s;
   background: #bcff00;
   background: radial-gradient(circle at top left, #d0ff4d, #bcff00);
@@ -1075,7 +1075,7 @@ body {
   }
 }
 .c:nth-child(59) {
-  animation: anim59 1.5s infinite alternate;
+  animation: anim59 5s infinite alternate;
   animation-delay: -0.885s;
   background: #bbff00;
   background: radial-gradient(circle at top left, #d0ff4d, #bbff00);
@@ -1093,7 +1093,7 @@ body {
   }
 }
 .c:nth-child(60) {
-  animation: anim60 1.5s infinite alternate;
+  animation: anim60 5s infinite alternate;
   animation-delay: -0.9s;
   background: #bbff00;
   background: radial-gradient(circle at top left, #cfff4d, #bbff00);
@@ -1111,7 +1111,7 @@ body {
   }
 }
 .c:nth-child(61) {
-  animation: anim61 1.5s infinite alternate;
+  animation: anim61 5s infinite alternate;
   animation-delay: -0.915s;
   background: #bbff00;
   background: radial-gradient(circle at top left, #cfff4d, #bbff00);
@@ -1129,7 +1129,7 @@ body {
   }
 }
 .c:nth-child(62) {
-  animation: anim62 1.5s infinite alternate;
+  animation: anim62 5s infinite alternate;
   animation-delay: -0.93s;
   background: #baff00;
   background: radial-gradient(circle at top left, #cfff4d, #baff00);
@@ -1147,7 +1147,7 @@ body {
   }
 }
 .c:nth-child(63) {
-  animation: anim63 1.5s infinite alternate;
+  animation: anim63 5s infinite alternate;
   animation-delay: -0.945s;
   background: #baff00;
   background: radial-gradient(circle at top left, #cfff4d, #baff00);
@@ -1165,7 +1165,7 @@ body {
   }
 }
 .c:nth-child(64) {
-  animation: anim64 1.5s infinite alternate;
+  animation: anim64 5s infinite alternate;
   animation-delay: -0.96s;
   background: #b9ff00;
   background: radial-gradient(circle at top left, #ceff4d, #b9ff00);
@@ -1183,7 +1183,7 @@ body {
   }
 }
 .c:nth-child(65) {
-  animation: anim65 1.5s infinite alternate;
+  animation: anim65 5s infinite alternate;
   animation-delay: -0.975s;
   background: #b9ff00;
   background: radial-gradient(circle at top left, #ceff4d, #b9ff00);
@@ -1201,7 +1201,7 @@ body {
   }
 }
 .c:nth-child(66) {
-  animation: anim66 1.5s infinite alternate;
+  animation: anim66 5s infinite alternate;
   animation-delay: -0.99s;
   background: #b8ff00;
   background: radial-gradient(circle at top left, #ceff4d, #b8ff00);
@@ -1219,7 +1219,7 @@ body {
   }
 }
 .c:nth-child(67) {
-  animation: anim67 1.5s infinite alternate;
+  animation: anim67 5s infinite alternate;
   animation-delay: -1.005s;
   background: #b8ff00;
   background: radial-gradient(circle at top left, #cdff4d, #b8ff00);
@@ -1237,7 +1237,7 @@ body {
   }
 }
 .c:nth-child(68) {
-  animation: anim68 1.5s infinite alternate;
+  animation: anim68 5s infinite alternate;
   animation-delay: -1.02s;
   background: #b8ff00;
   background: radial-gradient(circle at top left, #cdff4d, #b8ff00);
@@ -1255,7 +1255,7 @@ body {
   }
 }
 .c:nth-child(69) {
-  animation: anim69 1.5s infinite alternate;
+  animation: anim69 5s infinite alternate;
   animation-delay: -1.035s;
   background: #b7ff00;
   background: radial-gradient(circle at top left, #cdff4d, #b7ff00);
@@ -1273,7 +1273,7 @@ body {
   }
 }
 .c:nth-child(70) {
-  animation: anim70 1.5s infinite alternate;
+  animation: anim70 5s infinite alternate;
   animation-delay: -1.05s;
   background: #b7ff00;
   background: radial-gradient(circle at top left, #ccff4d, #b7ff00);
@@ -1291,7 +1291,7 @@ body {
   }
 }
 .c:nth-child(71) {
-  animation: anim71 1.5s infinite alternate;
+  animation: anim71 5s infinite alternate;
   animation-delay: -1.065s;
   background: #b6ff00;
   background: radial-gradient(circle at top left, #ccff4d, #b6ff00);
@@ -1309,7 +1309,7 @@ body {
   }
 }
 .c:nth-child(72) {
-  animation: anim72 1.5s infinite alternate;
+  animation: anim72 5s infinite alternate;
   animation-delay: -1.08s;
   background: #b6ff00;
   background: radial-gradient(circle at top left, #ccff4d, #b6ff00);
@@ -1327,7 +1327,7 @@ body {
   }
 }
 .c:nth-child(73) {
-  animation: anim73 1.5s infinite alternate;
+  animation: anim73 5s infinite alternate;
   animation-delay: -1.095s;
   background: #b5ff00;
   background: radial-gradient(circle at top left, #ccff4d, #b5ff00);
@@ -1345,7 +1345,7 @@ body {
   }
 }
 .c:nth-child(74) {
-  animation: anim74 1.5s infinite alternate;
+  animation: anim74 5s infinite alternate;
   animation-delay: -1.11s;
   background: #b5ff00;
   background: radial-gradient(circle at top left, #cbff4d, #b5ff00);
@@ -1363,7 +1363,7 @@ body {
   }
 }
 .c:nth-child(75) {
-  animation: anim75 1.5s infinite alternate;
+  animation: anim75 5s infinite alternate;
   animation-delay: -1.125s;
   background: #b5ff00;
   background: radial-gradient(circle at top left, #cbff4d, #b5ff00);
@@ -1381,7 +1381,7 @@ body {
   }
 }
 .c:nth-child(76) {
-  animation: anim76 1.5s infinite alternate;
+  animation: anim76 5s infinite alternate;
   animation-delay: -1.14s;
   background: #b4ff00;
   background: radial-gradient(circle at top left, #cbff4d, #b4ff00);
@@ -1399,7 +1399,7 @@ body {
   }
 }
 .c:nth-child(77) {
-  animation: anim77 1.5s infinite alternate;
+  animation: anim77 5s infinite alternate;
   animation-delay: -1.155s;
   background: #b4ff00;
   background: radial-gradient(circle at top left, #caff4d, #b4ff00);
@@ -1417,7 +1417,7 @@ body {
   }
 }
 .c:nth-child(78) {
-  animation: anim78 1.5s infinite alternate;
+  animation: anim78 5s infinite alternate;
   animation-delay: -1.17s;
   background: #b3ff00;
   background: radial-gradient(circle at top left, #caff4d, #b3ff00);
@@ -1435,7 +1435,7 @@ body {
   }
 }
 .c:nth-child(79) {
-  animation: anim79 1.5s infinite alternate;
+  animation: anim79 5s infinite alternate;
   animation-delay: -1.185s;
   background: #b3ff00;
   background: radial-gradient(circle at top left, #caff4d, #b3ff00);
@@ -1453,7 +1453,7 @@ body {
   }
 }
 .c:nth-child(80) {
-  animation: anim80 1.5s infinite alternate;
+  animation: anim80 5s infinite alternate;
   animation-delay: -1.2s;
   background: #b3ff00;
   background: radial-gradient(circle at top left, #c9ff4d, #b3ff00);
@@ -1471,7 +1471,7 @@ body {
   }
 }
 .c:nth-child(81) {
-  animation: anim81 1.5s infinite alternate;
+  animation: anim81 5s infinite alternate;
   animation-delay: -1.215s;
   background: #b2ff00;
   background: radial-gradient(circle at top left, #c9ff4d, #b2ff00);
@@ -1489,7 +1489,7 @@ body {
   }
 }
 .c:nth-child(82) {
-  animation: anim82 1.5s infinite alternate;
+  animation: anim82 5s infinite alternate;
   animation-delay: -1.23s;
   background: #b2ff00;
   background: radial-gradient(circle at top left, #c9ff4d, #b2ff00);
@@ -1507,7 +1507,7 @@ body {
   }
 }
 .c:nth-child(83) {
-  animation: anim83 1.5s infinite alternate;
+  animation: anim83 5s infinite alternate;
   animation-delay: -1.245s;
   background: #b1ff00;
   background: radial-gradient(circle at top left, #c9ff4d, #b1ff00);
@@ -1525,7 +1525,7 @@ body {
   }
 }
 .c:nth-child(84) {
-  animation: anim84 1.5s infinite alternate;
+  animation: anim84 5s infinite alternate;
   animation-delay: -1.26s;
   background: #b1ff00;
   background: radial-gradient(circle at top left, #c8ff4d, #b1ff00);
@@ -1543,7 +1543,7 @@ body {
   }
 }
 .c:nth-child(85) {
-  animation: anim85 1.5s infinite alternate;
+  animation: anim85 5s infinite alternate;
   animation-delay: -1.275s;
   background: #b0ff00;
   background: radial-gradient(circle at top left, #c8ff4d, #b0ff00);
@@ -1561,7 +1561,7 @@ body {
   }
 }
 .c:nth-child(86) {
-  animation: anim86 1.5s infinite alternate;
+  animation: anim86 5s infinite alternate;
   animation-delay: -1.29s;
   background: #b0ff00;
   background: radial-gradient(circle at top left, #c8ff4d, #b0ff00);
@@ -1579,7 +1579,7 @@ body {
   }
 }
 .c:nth-child(87) {
-  animation: anim87 1.5s infinite alternate;
+  animation: anim87 5s infinite alternate;
   animation-delay: -1.305s;
   background: #b0ff00;
   background: radial-gradient(circle at top left, #c7ff4d, #b0ff00);
@@ -1597,7 +1597,7 @@ body {
   }
 }
 .c:nth-child(88) {
-  animation: anim88 1.5s infinite alternate;
+  animation: anim88 5s infinite alternate;
   animation-delay: -1.32s;
   background: #afff00;
   background: radial-gradient(circle at top left, #c7ff4d, #afff00);
@@ -1615,7 +1615,7 @@ body {
   }
 }
 .c:nth-child(89) {
-  animation: anim89 1.5s infinite alternate;
+  animation: anim89 5s infinite alternate;
   animation-delay: -1.335s;
   background: #afff00;
   background: radial-gradient(circle at top left, #c7ff4d, #afff00);
@@ -1633,7 +1633,7 @@ body {
   }
 }
 .c:nth-child(90) {
-  animation: anim90 1.5s infinite alternate;
+  animation: anim90 5s infinite alternate;
   animation-delay: -1.35s;
   background: #aeff00;
   background: radial-gradient(circle at top left, #c6ff4d, #aeff00);
@@ -1651,7 +1651,7 @@ body {
   }
 }
 .c:nth-child(91) {
-  animation: anim91 1.5s infinite alternate;
+  animation: anim91 5s infinite alternate;
   animation-delay: -1.365s;
   background: #aeff00;
   background: radial-gradient(circle at top left, #c6ff4d, #aeff00);
@@ -1669,7 +1669,7 @@ body {
   }
 }
 .c:nth-child(92) {
-  animation: anim92 1.5s infinite alternate;
+  animation: anim92 5s infinite alternate;
   animation-delay: -1.38s;
   background: #adff00;
   background: radial-gradient(circle at top left, #c6ff4d, #adff00);
@@ -1687,7 +1687,7 @@ body {
   }
 }
 .c:nth-child(93) {
-  animation: anim93 1.5s infinite alternate;
+  animation: anim93 5s infinite alternate;
   animation-delay: -1.395s;
   background: #adff00;
   background: radial-gradient(circle at top left, #c6ff4d, #adff00);
@@ -1705,7 +1705,7 @@ body {
   }
 }
 .c:nth-child(94) {
-  animation: anim94 1.5s infinite alternate;
+  animation: anim94 5s infinite alternate;
   animation-delay: -1.41s;
   background: #adff00;
   background: radial-gradient(circle at top left, #c5ff4d, #adff00);
@@ -1723,7 +1723,7 @@ body {
   }
 }
 .c:nth-child(95) {
-  animation: anim95 1.5s infinite alternate;
+  animation: anim95 5s infinite alternate;
   animation-delay: -1.425s;
   background: #acff00;
   background: radial-gradient(circle at top left, #c5ff4d, #acff00);
@@ -1741,7 +1741,7 @@ body {
   }
 }
 .c:nth-child(96) {
-  animation: anim96 1.5s infinite alternate;
+  animation: anim96 5s infinite alternate;
   animation-delay: -1.44s;
   background: #acff00;
   background: radial-gradient(circle at top left, #c5ff4d, #acff00);
@@ -1759,7 +1759,7 @@ body {
   }
 }
 .c:nth-child(97) {
-  animation: anim97 1.5s infinite alternate;
+  animation: anim97 5s infinite alternate;
   animation-delay: -1.455s;
   background: #abff00;
   background: radial-gradient(circle at top left, #c4ff4d, #abff00);
@@ -1777,7 +1777,7 @@ body {
   }
 }
 .c:nth-child(98) {
-  animation: anim98 1.5s infinite alternate;
+  animation: anim98 5s infinite alternate;
   animation-delay: -1.47s;
   background: #abff00;
   background: radial-gradient(circle at top left, #c4ff4d, #abff00);
@@ -1795,7 +1795,7 @@ body {
   }
 }
 .c:nth-child(99) {
-  animation: anim99 1.5s infinite alternate;
+  animation: anim99 5s infinite alternate;
   animation-delay: -1.485s;
   background: #aaff00;
   background: radial-gradient(circle at top left, #c4ff4d, #aaff00);
@@ -1813,7 +1813,7 @@ body {
   }
 }
 .c:nth-child(100) {
-  animation: anim100 1.5s infinite alternate;
+  animation: anim100 5s infinite alternate;
   animation-delay: -1.5s;
   background: #aaff00;
   background: radial-gradient(circle at top left, #c4ff4d, #aaff00);
@@ -1831,7 +1831,7 @@ body {
   }
 }
 .c:nth-child(101) {
-  animation: anim101 1.5s infinite alternate;
+  animation: anim101 5s infinite alternate;
   animation-delay: -1.515s;
   background: #aaff00;
   background: radial-gradient(circle at top left, #c3ff4d, #aaff00);
@@ -1849,7 +1849,7 @@ body {
   }
 }
 .c:nth-child(102) {
-  animation: anim102 1.5s infinite alternate;
+  animation: anim102 5s infinite alternate;
   animation-delay: -1.53s;
   background: #a9ff00;
   background: radial-gradient(circle at top left, #c3ff4d, #a9ff00);
@@ -1867,7 +1867,7 @@ body {
   }
 }
 .c:nth-child(103) {
-  animation: anim103 1.5s infinite alternate;
+  animation: anim103 5s infinite alternate;
   animation-delay: -1.545s;
   background: #a9ff00;
   background: radial-gradient(circle at top left, #c3ff4d, #a9ff00);
@@ -1885,7 +1885,7 @@ body {
   }
 }
 .c:nth-child(104) {
-  animation: anim104 1.5s infinite alternate;
+  animation: anim104 5s infinite alternate;
   animation-delay: -1.56s;
   background: #a8ff00;
   background: radial-gradient(circle at top left, #c2ff4d, #a8ff00);
@@ -1903,7 +1903,7 @@ body {
   }
 }
 .c:nth-child(105) {
-  animation: anim105 1.5s infinite alternate;
+  animation: anim105 5s infinite alternate;
   animation-delay: -1.575s;
   background: #a8ff00;
   background: radial-gradient(circle at top left, #c2ff4d, #a8ff00);
@@ -1921,7 +1921,7 @@ body {
   }
 }
 .c:nth-child(106) {
-  animation: anim106 1.5s infinite alternate;
+  animation: anim106 5s infinite alternate;
   animation-delay: -1.59s;
   background: #a7ff00;
   background: radial-gradient(circle at top left, #c2ff4d, #a7ff00);
@@ -1939,7 +1939,7 @@ body {
   }
 }
 .c:nth-child(107) {
-  animation: anim107 1.5s infinite alternate;
+  animation: anim107 5s infinite alternate;
   animation-delay: -1.605s;
   background: #a7ff00;
   background: radial-gradient(circle at top left, #c1ff4d, #a7ff00);
@@ -1957,7 +1957,7 @@ body {
   }
 }
 .c:nth-child(108) {
-  animation: anim108 1.5s infinite alternate;
+  animation: anim108 5s infinite alternate;
   animation-delay: -1.62s;
   background: #a7ff00;
   background: radial-gradient(circle at top left, #c1ff4d, #a7ff00);
@@ -1975,7 +1975,7 @@ body {
   }
 }
 .c:nth-child(109) {
-  animation: anim109 1.5s infinite alternate;
+  animation: anim109 5s infinite alternate;
   animation-delay: -1.635s;
   background: #a6ff00;
   background: radial-gradient(circle at top left, #c1ff4d, #a6ff00);
@@ -1993,7 +1993,7 @@ body {
   }
 }
 .c:nth-child(110) {
-  animation: anim110 1.5s infinite alternate;
+  animation: anim110 5s infinite alternate;
   animation-delay: -1.65s;
   background: #a6ff00;
   background: radial-gradient(circle at top left, #c1ff4d, #a6ff00);
@@ -2011,7 +2011,7 @@ body {
   }
 }
 .c:nth-child(111) {
-  animation: anim111 1.5s infinite alternate;
+  animation: anim111 5s infinite alternate;
   animation-delay: -1.665s;
   background: #a5ff00;
   background: radial-gradient(circle at top left, #c0ff4d, #a5ff00);
@@ -2029,7 +2029,7 @@ body {
   }
 }
 .c:nth-child(112) {
-  animation: anim112 1.5s infinite alternate;
+  animation: anim112 5s infinite alternate;
   animation-delay: -1.68s;
   background: #a5ff00;
   background: radial-gradient(circle at top left, #c0ff4d, #a5ff00);
@@ -2047,7 +2047,7 @@ body {
   }
 }
 .c:nth-child(113) {
-  animation: anim113 1.5s infinite alternate;
+  animation: anim113 5s infinite alternate;
   animation-delay: -1.695s;
   background: #a4ff00;
   background: radial-gradient(circle at top left, #c0ff4d, #a4ff00);
@@ -2065,7 +2065,7 @@ body {
   }
 }
 .c:nth-child(114) {
-  animation: anim114 1.5s infinite alternate;
+  animation: anim114 5s infinite alternate;
   animation-delay: -1.71s;
   background: #a4ff00;
   background: radial-gradient(circle at top left, #bfff4d, #a4ff00);
@@ -2083,7 +2083,7 @@ body {
   }
 }
 .c:nth-child(115) {
-  animation: anim115 1.5s infinite alternate;
+  animation: anim115 5s infinite alternate;
   animation-delay: -1.725s;
   background: #a4ff00;
   background: radial-gradient(circle at top left, #bfff4d, #a4ff00);
@@ -2101,7 +2101,7 @@ body {
   }
 }
 .c:nth-child(116) {
-  animation: anim116 1.5s infinite alternate;
+  animation: anim116 5s infinite alternate;
   animation-delay: -1.74s;
   background: #a3ff00;
   background: radial-gradient(circle at top left, #bfff4d, #a3ff00);
@@ -2119,7 +2119,7 @@ body {
   }
 }
 .c:nth-child(117) {
-  animation: anim117 1.5s infinite alternate;
+  animation: anim117 5s infinite alternate;
   animation-delay: -1.755s;
   background: #a3ff00;
   background: radial-gradient(circle at top left, #beff4d, #a3ff00);
@@ -2137,7 +2137,7 @@ body {
   }
 }
 .c:nth-child(118) {
-  animation: anim118 1.5s infinite alternate;
+  animation: anim118 5s infinite alternate;
   animation-delay: -1.77s;
   background: #a2ff00;
   background: radial-gradient(circle at top left, #beff4d, #a2ff00);
@@ -2155,7 +2155,7 @@ body {
   }
 }
 .c:nth-child(119) {
-  animation: anim119 1.5s infinite alternate;
+  animation: anim119 5s infinite alternate;
   animation-delay: -1.785s;
   background: #a2ff00;
   background: radial-gradient(circle at top left, #beff4d, #a2ff00);
@@ -2173,7 +2173,7 @@ body {
   }
 }
 .c:nth-child(120) {
-  animation: anim120 1.5s infinite alternate;
+  animation: anim120 5s infinite alternate;
   animation-delay: -1.8s;
   background: #a2ff00;
   background: radial-gradient(circle at top left, #beff4d, #a2ff00);
@@ -2191,7 +2191,7 @@ body {
   }
 }
 .c:nth-child(121) {
-  animation: anim121 1.5s infinite alternate;
+  animation: anim121 5s infinite alternate;
   animation-delay: -1.815s;
   background: #a1ff00;
   background: radial-gradient(circle at top left, #bdff4d, #a1ff00);
@@ -2209,7 +2209,7 @@ body {
   }
 }
 .c:nth-child(122) {
-  animation: anim122 1.5s infinite alternate;
+  animation: anim122 5s infinite alternate;
   animation-delay: -1.83s;
   background: #a1ff00;
   background: radial-gradient(circle at top left, #bdff4d, #a1ff00);
@@ -2227,7 +2227,7 @@ body {
   }
 }
 .c:nth-child(123) {
-  animation: anim123 1.5s infinite alternate;
+  animation: anim123 5s infinite alternate;
   animation-delay: -1.845s;
   background: #a0ff00;
   background: radial-gradient(circle at top left, #bdff4d, #a0ff00);
@@ -2245,7 +2245,7 @@ body {
   }
 }
 .c:nth-child(124) {
-  animation: anim124 1.5s infinite alternate;
+  animation: anim124 5s infinite alternate;
   animation-delay: -1.86s;
   background: #a0ff00;
   background: radial-gradient(circle at top left, #bcff4d, #a0ff00);
@@ -2263,7 +2263,7 @@ body {
   }
 }
 .c:nth-child(125) {
-  animation: anim125 1.5s infinite alternate;
+  animation: anim125 5s infinite alternate;
   animation-delay: -1.875s;
   background: #9fff00;
   background: radial-gradient(circle at top left, #bcff4d, #9fff00);
@@ -2281,7 +2281,7 @@ body {
   }
 }
 .c:nth-child(126) {
-  animation: anim126 1.5s infinite alternate;
+  animation: anim126 5s infinite alternate;
   animation-delay: -1.89s;
   background: #9fff00;
   background: radial-gradient(circle at top left, #bcff4d, #9fff00);
@@ -2299,7 +2299,7 @@ body {
   }
 }
 .c:nth-child(127) {
-  animation: anim127 1.5s infinite alternate;
+  animation: anim127 5s infinite alternate;
   animation-delay: -1.905s;
   background: #9fff00;
   background: radial-gradient(circle at top left, #bbff4d, #9fff00);
@@ -2317,7 +2317,7 @@ body {
   }
 }
 .c:nth-child(128) {
-  animation: anim128 1.5s infinite alternate;
+  animation: anim128 5s infinite alternate;
   animation-delay: -1.92s;
   background: #9eff00;
   background: radial-gradient(circle at top left, #bbff4d, #9eff00);
@@ -2335,7 +2335,7 @@ body {
   }
 }
 .c:nth-child(129) {
-  animation: anim129 1.5s infinite alternate;
+  animation: anim129 5s infinite alternate;
   animation-delay: -1.935s;
   background: #9eff00;
   background: radial-gradient(circle at top left, #bbff4d, #9eff00);
@@ -2353,7 +2353,7 @@ body {
   }
 }
 .c:nth-child(130) {
-  animation: anim130 1.5s infinite alternate;
+  animation: anim130 5s infinite alternate;
   animation-delay: -1.95s;
   background: #9dff00;
   background: radial-gradient(circle at top left, #bbff4d, #9dff00);
@@ -2371,7 +2371,7 @@ body {
   }
 }
 .c:nth-child(131) {
-  animation: anim131 1.5s infinite alternate;
+  animation: anim131 5s infinite alternate;
   animation-delay: -1.965s;
   background: #9dff00;
   background: radial-gradient(circle at top left, #baff4d, #9dff00);
@@ -2389,7 +2389,7 @@ body {
   }
 }
 .c:nth-child(132) {
-  animation: anim132 1.5s infinite alternate;
+  animation: anim132 5s infinite alternate;
   animation-delay: -1.98s;
   background: #9cff00;
   background: radial-gradient(circle at top left, #baff4d, #9cff00);
@@ -2407,7 +2407,7 @@ body {
   }
 }
 .c:nth-child(133) {
-  animation: anim133 1.5s infinite alternate;
+  animation: anim133 5s infinite alternate;
   animation-delay: -1.995s;
   background: #9cff00;
   background: radial-gradient(circle at top left, #baff4d, #9cff00);
@@ -2425,7 +2425,7 @@ body {
   }
 }
 .c:nth-child(134) {
-  animation: anim134 1.5s infinite alternate;
+  animation: anim134 5s infinite alternate;
   animation-delay: -2.01s;
   background: #9cff00;
   background: radial-gradient(circle at top left, #b9ff4d, #9cff00);
@@ -2443,7 +2443,7 @@ body {
   }
 }
 .c:nth-child(135) {
-  animation: anim135 1.5s infinite alternate;
+  animation: anim135 5s infinite alternate;
   animation-delay: -2.025s;
   background: #9bff00;
   background: radial-gradient(circle at top left, #b9ff4d, #9bff00);
@@ -2461,7 +2461,7 @@ body {
   }
 }
 .c:nth-child(136) {
-  animation: anim136 1.5s infinite alternate;
+  animation: anim136 5s infinite alternate;
   animation-delay: -2.04s;
   background: #9bff00;
   background: radial-gradient(circle at top left, #b9ff4d, #9bff00);
@@ -2479,7 +2479,7 @@ body {
   }
 }
 .c:nth-child(137) {
-  animation: anim137 1.5s infinite alternate;
+  animation: anim137 5s infinite alternate;
   animation-delay: -2.055s;
   background: #9aff00;
   background: radial-gradient(circle at top left, #b8ff4d, #9aff00);
@@ -2497,7 +2497,7 @@ body {
   }
 }
 .c:nth-child(138) {
-  animation: anim138 1.5s infinite alternate;
+  animation: anim138 5s infinite alternate;
   animation-delay: -2.07s;
   background: #9aff00;
   background: radial-gradient(circle at top left, #b8ff4d, #9aff00);
@@ -2515,7 +2515,7 @@ body {
   }
 }
 .c:nth-child(139) {
-  animation: anim139 1.5s infinite alternate;
+  animation: anim139 5s infinite alternate;
   animation-delay: -2.085s;
   background: #99ff00;
   background: radial-gradient(circle at top left, #b8ff4d, #99ff00);
@@ -2533,7 +2533,7 @@ body {
   }
 }
 .c:nth-child(140) {
-  animation: anim140 1.5s infinite alternate;
+  animation: anim140 5s infinite alternate;
   animation-delay: -2.1s;
   background: #99ff00;
   background: radial-gradient(circle at top left, #b8ff4d, #99ff00);
@@ -2551,7 +2551,7 @@ body {
   }
 }
 .c:nth-child(141) {
-  animation: anim141 1.5s infinite alternate;
+  animation: anim141 5s infinite alternate;
   animation-delay: -2.115s;
   background: #99ff00;
   background: radial-gradient(circle at top left, #b7ff4d, #99ff00);
@@ -2569,7 +2569,7 @@ body {
   }
 }
 .c:nth-child(142) {
-  animation: anim142 1.5s infinite alternate;
+  animation: anim142 5s infinite alternate;
   animation-delay: -2.13s;
   background: #98ff00;
   background: radial-gradient(circle at top left, #b7ff4d, #98ff00);
@@ -2587,7 +2587,7 @@ body {
   }
 }
 .c:nth-child(143) {
-  animation: anim143 1.5s infinite alternate;
+  animation: anim143 5s infinite alternate;
   animation-delay: -2.145s;
   background: #98ff00;
   background: radial-gradient(circle at top left, #b7ff4d, #98ff00);
@@ -2605,7 +2605,7 @@ body {
   }
 }
 .c:nth-child(144) {
-  animation: anim144 1.5s infinite alternate;
+  animation: anim144 5s infinite alternate;
   animation-delay: -2.16s;
   background: #97ff00;
   background: radial-gradient(circle at top left, #b6ff4d, #97ff00);
@@ -2623,7 +2623,7 @@ body {
   }
 }
 .c:nth-child(145) {
-  animation: anim145 1.5s infinite alternate;
+  animation: anim145 5s infinite alternate;
   animation-delay: -2.175s;
   background: #97ff00;
   background: radial-gradient(circle at top left, #b6ff4d, #97ff00);
@@ -2641,7 +2641,7 @@ body {
   }
 }
 .c:nth-child(146) {
-  animation: anim146 1.5s infinite alternate;
+  animation: anim146 5s infinite alternate;
   animation-delay: -2.19s;
   background: #96ff00;
   background: radial-gradient(circle at top left, #b6ff4d, #96ff00);
@@ -2659,7 +2659,7 @@ body {
   }
 }
 .c:nth-child(147) {
-  animation: anim147 1.5s infinite alternate;
+  animation: anim147 5s infinite alternate;
   animation-delay: -2.205s;
   background: #96ff00;
   background: radial-gradient(circle at top left, #b6ff4d, #96ff00);
@@ -2677,7 +2677,7 @@ body {
   }
 }
 .c:nth-child(148) {
-  animation: anim148 1.5s infinite alternate;
+  animation: anim148 5s infinite alternate;
   animation-delay: -2.22s;
   background: #96ff00;
   background: radial-gradient(circle at top left, #b5ff4d, #96ff00);
@@ -2695,7 +2695,7 @@ body {
   }
 }
 .c:nth-child(149) {
-  animation: anim149 1.5s infinite alternate;
+  animation: anim149 5s infinite alternate;
   animation-delay: -2.235s;
   background: #95ff00;
   background: radial-gradient(circle at top left, #b5ff4d, #95ff00);
@@ -2713,7 +2713,7 @@ body {
   }
 }
 .c:nth-child(150) {
-  animation: anim150 1.5s infinite alternate;
+  animation: anim150 5s infinite alternate;
   animation-delay: -2.25s;
   background: #95ff00;
   background: radial-gradient(circle at top left, #b5ff4d, #95ff00);
@@ -2731,7 +2731,7 @@ body {
   }
 }
 .c:nth-child(151) {
-  animation: anim151 1.5s infinite alternate;
+  animation: anim151 5s infinite alternate;
   animation-delay: -2.265s;
   background: #94ff00;
   background: radial-gradient(circle at top left, #b4ff4d, #94ff00);
@@ -2749,7 +2749,7 @@ body {
   }
 }
 .c:nth-child(152) {
-  animation: anim152 1.5s infinite alternate;
+  animation: anim152 5s infinite alternate;
   animation-delay: -2.28s;
   background: #94ff00;
   background: radial-gradient(circle at top left, #b4ff4d, #94ff00);
@@ -2767,7 +2767,7 @@ body {
   }
 }
 .c:nth-child(153) {
-  animation: anim153 1.5s infinite alternate;
+  animation: anim153 5s infinite alternate;
   animation-delay: -2.295s;
   background: #93ff00;
   background: radial-gradient(circle at top left, #b4ff4d, #93ff00);
@@ -2785,7 +2785,7 @@ body {
   }
 }
 .c:nth-child(154) {
-  animation: anim154 1.5s infinite alternate;
+  animation: anim154 5s infinite alternate;
   animation-delay: -2.31s;
   background: #93ff00;
   background: radial-gradient(circle at top left, #b3ff4d, #93ff00);
@@ -2803,7 +2803,7 @@ body {
   }
 }
 .c:nth-child(155) {
-  animation: anim155 1.5s infinite alternate;
+  animation: anim155 5s infinite alternate;
   animation-delay: -2.325s;
   background: #93ff00;
   background: radial-gradient(circle at top left, #b3ff4d, #93ff00);
@@ -2821,7 +2821,7 @@ body {
   }
 }
 .c:nth-child(156) {
-  animation: anim156 1.5s infinite alternate;
+  animation: anim156 5s infinite alternate;
   animation-delay: -2.34s;
   background: #92ff00;
   background: radial-gradient(circle at top left, #b3ff4d, #92ff00);
@@ -2839,7 +2839,7 @@ body {
   }
 }
 .c:nth-child(157) {
-  animation: anim157 1.5s infinite alternate;
+  animation: anim157 5s infinite alternate;
   animation-delay: -2.355s;
   background: #92ff00;
   background: radial-gradient(circle at top left, #b3ff4d, #92ff00);
@@ -2857,7 +2857,7 @@ body {
   }
 }
 .c:nth-child(158) {
-  animation: anim158 1.5s infinite alternate;
+  animation: anim158 5s infinite alternate;
   animation-delay: -2.37s;
   background: #91ff00;
   background: radial-gradient(circle at top left, #b2ff4d, #91ff00);
@@ -2875,7 +2875,7 @@ body {
   }
 }
 .c:nth-child(159) {
-  animation: anim159 1.5s infinite alternate;
+  animation: anim159 5s infinite alternate;
   animation-delay: -2.385s;
   background: #91ff00;
   background: radial-gradient(circle at top left, #b2ff4d, #91ff00);
@@ -2893,7 +2893,7 @@ body {
   }
 }
 .c:nth-child(160) {
-  animation: anim160 1.5s infinite alternate;
+  animation: anim160 5s infinite alternate;
   animation-delay: -2.4s;
   background: #91ff00;
   background: radial-gradient(circle at top left, #b2ff4d, #91ff00);
@@ -2911,7 +2911,7 @@ body {
   }
 }
 .c:nth-child(161) {
-  animation: anim161 1.5s infinite alternate;
+  animation: anim161 5s infinite alternate;
   animation-delay: -2.415s;
   background: #90ff00;
   background: radial-gradient(circle at top left, #b1ff4d, #90ff00);
@@ -2929,7 +2929,7 @@ body {
   }
 }
 .c:nth-child(162) {
-  animation: anim162 1.5s infinite alternate;
+  animation: anim162 5s infinite alternate;
   animation-delay: -2.43s;
   background: #90ff00;
   background: radial-gradient(circle at top left, #b1ff4d, #90ff00);
@@ -2947,7 +2947,7 @@ body {
   }
 }
 .c:nth-child(163) {
-  animation: anim163 1.5s infinite alternate;
+  animation: anim163 5s infinite alternate;
   animation-delay: -2.445s;
   background: #8fff00;
   background: radial-gradient(circle at top left, #b1ff4d, #8fff00);
@@ -2965,7 +2965,7 @@ body {
   }
 }
 .c:nth-child(164) {
-  animation: anim164 1.5s infinite alternate;
+  animation: anim164 5s infinite alternate;
   animation-delay: -2.46s;
   background: #8fff00;
   background: radial-gradient(circle at top left, #b0ff4d, #8fff00);
@@ -2983,7 +2983,7 @@ body {
   }
 }
 .c:nth-child(165) {
-  animation: anim165 1.5s infinite alternate;
+  animation: anim165 5s infinite alternate;
   animation-delay: -2.475s;
   background: #8eff00;
   background: radial-gradient(circle at top left, #b0ff4d, #8eff00);
@@ -3001,7 +3001,7 @@ body {
   }
 }
 .c:nth-child(166) {
-  animation: anim166 1.5s infinite alternate;
+  animation: anim166 5s infinite alternate;
   animation-delay: -2.49s;
   background: #8eff00;
   background: radial-gradient(circle at top left, #b0ff4d, #8eff00);
@@ -3019,7 +3019,7 @@ body {
   }
 }
 .c:nth-child(167) {
-  animation: anim167 1.5s infinite alternate;
+  animation: anim167 5s infinite alternate;
   animation-delay: -2.505s;
   background: #8eff00;
   background: radial-gradient(circle at top left, #b0ff4d, #8eff00);
@@ -3037,7 +3037,7 @@ body {
   }
 }
 .c:nth-child(168) {
-  animation: anim168 1.5s infinite alternate;
+  animation: anim168 5s infinite alternate;
   animation-delay: -2.52s;
   background: #8dff00;
   background: radial-gradient(circle at top left, #afff4d, #8dff00);
@@ -3055,7 +3055,7 @@ body {
   }
 }
 .c:nth-child(169) {
-  animation: anim169 1.5s infinite alternate;
+  animation: anim169 5s infinite alternate;
   animation-delay: -2.535s;
   background: #8dff00;
   background: radial-gradient(circle at top left, #afff4d, #8dff00);
@@ -3073,7 +3073,7 @@ body {
   }
 }
 .c:nth-child(170) {
-  animation: anim170 1.5s infinite alternate;
+  animation: anim170 5s infinite alternate;
   animation-delay: -2.55s;
   background: #8cff00;
   background: radial-gradient(circle at top left, #afff4d, #8cff00);
@@ -3091,7 +3091,7 @@ body {
   }
 }
 .c:nth-child(171) {
-  animation: anim171 1.5s infinite alternate;
+  animation: anim171 5s infinite alternate;
   animation-delay: -2.565s;
   background: #8cff00;
   background: radial-gradient(circle at top left, #aeff4d, #8cff00);
@@ -3109,7 +3109,7 @@ body {
   }
 }
 .c:nth-child(172) {
-  animation: anim172 1.5s infinite alternate;
+  animation: anim172 5s infinite alternate;
   animation-delay: -2.58s;
   background: #8bff00;
   background: radial-gradient(circle at top left, #aeff4d, #8bff00);
@@ -3127,7 +3127,7 @@ body {
   }
 }
 .c:nth-child(173) {
-  animation: anim173 1.5s infinite alternate;
+  animation: anim173 5s infinite alternate;
   animation-delay: -2.595s;
   background: #8bff00;
   background: radial-gradient(circle at top left, #aeff4d, #8bff00);
@@ -3145,7 +3145,7 @@ body {
   }
 }
 .c:nth-child(174) {
-  animation: anim174 1.5s infinite alternate;
+  animation: anim174 5s infinite alternate;
   animation-delay: -2.61s;
   background: #8bff00;
   background: radial-gradient(circle at top left, #adff4d, #8bff00);
@@ -3163,7 +3163,7 @@ body {
   }
 }
 .c:nth-child(175) {
-  animation: anim175 1.5s infinite alternate;
+  animation: anim175 5s infinite alternate;
   animation-delay: -2.625s;
   background: #8aff00;
   background: radial-gradient(circle at top left, #adff4d, #8aff00);
@@ -3181,7 +3181,7 @@ body {
   }
 }
 .c:nth-child(176) {
-  animation: anim176 1.5s infinite alternate;
+  animation: anim176 5s infinite alternate;
   animation-delay: -2.64s;
   background: #8aff00;
   background: radial-gradient(circle at top left, #adff4d, #8aff00);
@@ -3199,7 +3199,7 @@ body {
   }
 }
 .c:nth-child(177) {
-  animation: anim177 1.5s infinite alternate;
+  animation: anim177 5s infinite alternate;
   animation-delay: -2.655s;
   background: #89ff00;
   background: radial-gradient(circle at top left, #adff4d, #89ff00);
@@ -3217,7 +3217,7 @@ body {
   }
 }
 .c:nth-child(178) {
-  animation: anim178 1.5s infinite alternate;
+  animation: anim178 5s infinite alternate;
   animation-delay: -2.67s;
   background: #89ff00;
   background: radial-gradient(circle at top left, #acff4d, #89ff00);
@@ -3235,7 +3235,7 @@ body {
   }
 }
 .c:nth-child(179) {
-  animation: anim179 1.5s infinite alternate;
+  animation: anim179 5s infinite alternate;
   animation-delay: -2.685s;
   background: #88ff00;
   background: radial-gradient(circle at top left, #acff4d, #88ff00);
@@ -3253,7 +3253,7 @@ body {
   }
 }
 .c:nth-child(180) {
-  animation: anim180 1.5s infinite alternate;
+  animation: anim180 5s infinite alternate;
   animation-delay: -2.7s;
   background: #88ff00;
   background: radial-gradient(circle at top left, #acff4d, #88ff00);
@@ -3271,7 +3271,7 @@ body {
   }
 }
 .c:nth-child(181) {
-  animation: anim181 1.5s infinite alternate;
+  animation: anim181 5s infinite alternate;
   animation-delay: -2.715s;
   background: #88ff00;
   background: radial-gradient(circle at top left, #abff4d, #88ff00);
@@ -3289,7 +3289,7 @@ body {
   }
 }
 .c:nth-child(182) {
-  animation: anim182 1.5s infinite alternate;
+  animation: anim182 5s infinite alternate;
   animation-delay: -2.73s;
   background: #87ff00;
   background: radial-gradient(circle at top left, #abff4d, #87ff00);
@@ -3307,7 +3307,7 @@ body {
   }
 }
 .c:nth-child(183) {
-  animation: anim183 1.5s infinite alternate;
+  animation: anim183 5s infinite alternate;
   animation-delay: -2.745s;
   background: #87ff00;
   background: radial-gradient(circle at top left, #abff4d, #87ff00);
@@ -3325,7 +3325,7 @@ body {
   }
 }
 .c:nth-child(184) {
-  animation: anim184 1.5s infinite alternate;
+  animation: anim184 5s infinite alternate;
   animation-delay: -2.76s;
   background: #86ff00;
   background: radial-gradient(circle at top left, #abff4d, #86ff00);
@@ -3343,7 +3343,7 @@ body {
   }
 }
 .c:nth-child(185) {
-  animation: anim185 1.5s infinite alternate;
+  animation: anim185 5s infinite alternate;
   animation-delay: -2.775s;
   background: #86ff00;
   background: radial-gradient(circle at top left, #aaff4d, #86ff00);
@@ -3361,7 +3361,7 @@ body {
   }
 }
 .c:nth-child(186) {
-  animation: anim186 1.5s infinite alternate;
+  animation: anim186 5s infinite alternate;
   animation-delay: -2.79s;
   background: #85ff00;
   background: radial-gradient(circle at top left, #aaff4d, #85ff00);
@@ -3379,7 +3379,7 @@ body {
   }
 }
 .c:nth-child(187) {
-  animation: anim187 1.5s infinite alternate;
+  animation: anim187 5s infinite alternate;
   animation-delay: -2.805s;
   background: #85ff00;
   background: radial-gradient(circle at top left, #aaff4d, #85ff00);
@@ -3397,7 +3397,7 @@ body {
   }
 }
 .c:nth-child(188) {
-  animation: anim188 1.5s infinite alternate;
+  animation: anim188 5s infinite alternate;
   animation-delay: -2.82s;
   background: #85ff00;
   background: radial-gradient(circle at top left, #a9ff4d, #85ff00);
@@ -3415,7 +3415,7 @@ body {
   }
 }
 .c:nth-child(189) {
-  animation: anim189 1.5s infinite alternate;
+  animation: anim189 5s infinite alternate;
   animation-delay: -2.835s;
   background: #84ff00;
   background: radial-gradient(circle at top left, #a9ff4d, #84ff00);
@@ -3433,7 +3433,7 @@ body {
   }
 }
 .c:nth-child(190) {
-  animation: anim190 1.5s infinite alternate;
+  animation: anim190 5s infinite alternate;
   animation-delay: -2.85s;
   background: #84ff00;
   background: radial-gradient(circle at top left, #a9ff4d, #84ff00);
@@ -3451,7 +3451,7 @@ body {
   }
 }
 .c:nth-child(191) {
-  animation: anim191 1.5s infinite alternate;
+  animation: anim191 5s infinite alternate;
   animation-delay: -2.865s;
   background: #83ff00;
   background: radial-gradient(circle at top left, #a8ff4d, #83ff00);
@@ -3469,7 +3469,7 @@ body {
   }
 }
 .c:nth-child(192) {
-  animation: anim192 1.5s infinite alternate;
+  animation: anim192 5s infinite alternate;
   animation-delay: -2.88s;
   background: #83ff00;
   background: radial-gradient(circle at top left, #a8ff4d, #83ff00);
@@ -3487,7 +3487,7 @@ body {
   }
 }
 .c:nth-child(193) {
-  animation: anim193 1.5s infinite alternate;
+  animation: anim193 5s infinite alternate;
   animation-delay: -2.895s;
   background: #82ff00;
   background: radial-gradient(circle at top left, #a8ff4d, #82ff00);
@@ -3505,7 +3505,7 @@ body {
   }
 }
 .c:nth-child(194) {
-  animation: anim194 1.5s infinite alternate;
+  animation: anim194 5s infinite alternate;
   animation-delay: -2.91s;
   background: #82ff00;
   background: radial-gradient(circle at top left, #a8ff4d, #82ff00);
@@ -3523,7 +3523,7 @@ body {
   }
 }
 .c:nth-child(195) {
-  animation: anim195 1.5s infinite alternate;
+  animation: anim195 5s infinite alternate;
   animation-delay: -2.925s;
   background: #82ff00;
   background: radial-gradient(circle at top left, #a7ff4d, #82ff00);
@@ -3541,7 +3541,7 @@ body {
   }
 }
 .c:nth-child(196) {
-  animation: anim196 1.5s infinite alternate;
+  animation: anim196 5s infinite alternate;
   animation-delay: -2.94s;
   background: #81ff00;
   background: radial-gradient(circle at top left, #a7ff4d, #81ff00);
@@ -3559,7 +3559,7 @@ body {
   }
 }
 .c:nth-child(197) {
-  animation: anim197 1.5s infinite alternate;
+  animation: anim197 5s infinite alternate;
   animation-delay: -2.955s;
   background: #81ff00;
   background: radial-gradient(circle at top left, #a7ff4d, #81ff00);
@@ -3577,7 +3577,7 @@ body {
   }
 }
 .c:nth-child(198) {
-  animation: anim198 1.5s infinite alternate;
+  animation: anim198 5s infinite alternate;
   animation-delay: -2.97s;
   background: #80ff00;
   background: radial-gradient(circle at top left, #a6ff4d, #80ff00);
@@ -3595,7 +3595,7 @@ body {
   }
 }
 .c:nth-child(199) {
-  animation: anim199 1.5s infinite alternate;
+  animation: anim199 5s infinite alternate;
   animation-delay: -2.985s;
   background: #80ff00;
   background: radial-gradient(circle at top left, #a6ff4d, #80ff00);
@@ -3613,7 +3613,7 @@ body {
   }
 }
 .c:nth-child(200) {
-  animation: anim200 1.5s infinite alternate;
+  animation: anim200 5s infinite alternate;
   animation-delay: -3s;
   background: #80ff00;
   background: radial-gradient(circle at top left, #a6ff4d, #80ff00);
