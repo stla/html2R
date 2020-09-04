@@ -1,5 +1,20 @@
 var HTMLeditor, Reditor;
 
+function errorAlert() {
+  $.alert({
+    theme: "bootstrap",
+    title: "An error occured!",
+    animation: "scale",
+    closeAnimation: "scale",
+    buttons: {
+      okay: {
+        text: "Okay",
+        btnClass: "btn-blue"
+      }
+    }
+  });
+}
+
 
 $(document).on("shiny:connected", function() {
   HTMLeditor = ace.edit("aceHTML");
@@ -100,6 +115,11 @@ $(document).ready(function() {
                             $("#busy").hide();
                             $(".row").css({"opacity": 1, "pointer-events": "auto"});
                             HTMLeditor.setValue(prettyCode, true);
+                            setTimeout(function() {
+                              HTMLeditor.renderer.$updateScrollBarH();
+                              HTMLeditor.renderer.scrollToX(0);
+                              HTMLeditor.renderer.scrollToY(0);
+                            }, 0);
                           } catch(err) {
                             $("#busy").hide();
                             $(".row").css({"opacity": 1, "pointer-events": "auto"});
@@ -117,29 +137,41 @@ $(document).ready(function() {
                               }
                             });
                           }
+                        } else {
+                          errorAlert();
                         }
                       }).fail(function(jqxhr, settings, exception) {
                         console.log("exception:", exception);
                         $("#busy").hide();
                         $(".row").css({"opacity": 1, "pointer-events": "auto"});
+                        errorAlert();
                       });
+                    } else {
+                      errorAlert();
                     }
                   }).fail(function(jqxhr, settings, exception) {
                     console.log("exception:", exception);
                     $("#busy").hide();
                     $(".row").css({"opacity": 1, "pointer-events": "auto"});
+                    errorAlert();
                   });
+                } else {
+                  errorAlert();
                 }
               }).fail(function(jqxhr, settings, exception) {
                 console.log("exception:", exception);
                 $("#busy").hide();
                 $(".row").css({"opacity": 1, "pointer-events": "auto"});
+                errorAlert();
               });
+            } else {
+              errorAlert();
             }
           }).fail(function(jqxhr, settings, exception) {
 						console.log("exception:", exception);
 						$("#busy").hide();
             $(".row").css({"opacity": 1, "pointer-events": "auto"});
+            errorAlert();
 					});
         }
       });

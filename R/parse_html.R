@@ -2,7 +2,11 @@
 
 parse_attribute <- function(attr){
   as.character(glue(
-    '`{attr$key}` = "{value}"',
+    '{key} = "{value}"',
+    key = ifelse(
+      attr$key == "for" || grepl("-", attr$key),
+      sprintf("`%s`", attr$key), attr$key
+    ),
     value = ifelse(length(attr$value), sprintf("%s", attr$value), "")
   ))
 }
