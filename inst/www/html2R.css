@@ -88,7 +88,15 @@ h2.header {
   height: 26px;
 }
 
+/* jquery-confirm */
+.jconfirm.jconfirm-bootstrap .jconfirm-box-container .jconfirm-box {
+  text-align: center;
+  -webkit-box-shadow: 0 0 10vh -2px skyblue;
+  -moz-box-shadow: 0 0 10vh -2px skyblue;
+  box-shadow: 0 0 10vh -2px skyblue;
+}
 
+/* spinner */
 #busy {
   display: none;
   position: absolute;

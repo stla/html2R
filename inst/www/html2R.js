@@ -1,17 +1,16 @@
 var HTMLeditor, Reditor;
 
+
 function errorAlert() {
-  $.alert({
+  $.dialog({
     theme: "bootstrap",
-    title: "An error occured!",
+    title: null,
+    content: "<strong>An error occured!</strong>",
     animation: "scale",
     closeAnimation: "scale",
-    buttons: {
-      okay: {
-        text: "Okay",
-        btnClass: "btn-blue"
-      }
-    }
+    useBootstrap: false,
+    boxWidth: "50%",
+    backgroundDismiss: true
   });
 }
 
@@ -65,6 +64,19 @@ $(document).ready(function() {
   $("#copy").on("click", function() {
     var R = Reditor.getValue();
     navigator.clipboard.writeText(R);
+    var dial = $.dialog({
+      theme: "bootstrap",
+      title: null,
+      content: "<strong>Copied!</strong>",
+      animation: "scale",
+      closeAnimation: "scale",
+      closeIcon: false,
+      useBootstrap: false,
+      boxWidth: "fit-content"
+    });
+    setTimeout(function() {
+      dial.close();
+    }, 1000);
   });
 
   $("#prettify").on("click", function() {
