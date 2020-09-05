@@ -11,6 +11,12 @@ h2.header {
   font-size: 35px;
   margin-top: 0;
   margin-bottom: 2px;
+  top: 35%;
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(#262626, #eaeaea, #262626);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 #parse, #copy, #prettify {
