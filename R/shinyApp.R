@@ -11,7 +11,8 @@ ui <- function(html, theme, fontSize){
       tags$link(rel = "stylesheet", href = "wwwH2R/html2R.css"),
       tags$link(rel = "stylesheet", href = "wwwH2R/particles.css"),
       tags$link(rel = "stylesheet", href = "wwwH2R/jquery-confirm.min.css"),
-      tags$script(src = "wwwH2R/jquery-confirm.min.js")
+      tags$script(src = "wwwH2R/jquery-confirm.min.js"),
+      tags$script(src = "wwwH2R/purify.min.js")
     ),
 
     if(html == ""){

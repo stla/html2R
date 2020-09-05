@@ -143,7 +143,36 @@ $(document).ready(function() {
                               "opacity": 1,
                               "pointer-events": "auto"
                             });
-                            $.alert({
+                            $.confirm({
+                              theme: "bootstrap",
+                              title: "Failed to prettify!",
+                              content: "This can be due to invalid HTML.",
+                              buttons: {
+                                okay: {
+                                  text: "Okay",
+                                  btnClass: "btn-orange"
+                                },
+                                fix: {
+                                  text: "Try to fix",
+                                  btnClass: "btn-info",
+                                  action: function() {
+                                    var html = HTMLeditor.getValue();
+                                    //        var json = himalaya.parse(html);
+                                    //        var newHtml = himalaya.stringify(json);
+                                    var newHtml = DOMPurify.sanitize(html, {
+                                      WHOLE_DOCUMENT: true
+                                    });
+                                    HTMLeditor.setValue(newHtml, true);
+                                    setTimeout(function () {
+                                      HTMLeditor.renderer.$updateScrollBarH();
+                                      HTMLeditor.renderer.scrollToX(0);
+                                      HTMLeditor.renderer.scrollToY(0);
+                                    }, 0);
+                                  }
+                                }
+                              }
+                            });
+/*                            $.alert({
                               theme: "bootstrap",
                               title: "Failed to prettify!",
                               content: "This may be due to invalid HTML code.",
@@ -155,7 +184,7 @@ $(document).ready(function() {
                                   btnClass: "btn-blue"
                                 }
                               }
-                            });
+                            }); */
                           }
                         } else {
                           errorAlert();
