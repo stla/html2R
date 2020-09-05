@@ -64,7 +64,7 @@ parse_content <- function(node, html){
 
 isSep <- function(node){
   identical(names(node), c("type","content")) &&
-    node[["type"]] == "text" && grepl("^\n\\s*?$", node[["content"]])
+    node[["type"]] == "text" && grepl("^\\s*?$", node[["content"]])
 }
 
 isComment <- function(node){
@@ -103,7 +103,8 @@ parse_node <- function(node){
   }else if(node[["type"]] == "text" && !isSep(node)){
     code <- glue(
       '"{content}"',
-      content = gsub("(^\\s*|\\s*$)", "", node[["content"]])
+      content = gsub("\\\\", "\\\\\\\\",
+                     gsub("(^\\s*|\\s*$)", "", node[["content"]]))
     )
   }
   as.character(code)

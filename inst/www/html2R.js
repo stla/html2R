@@ -29,7 +29,7 @@ $(document).on("shiny:connected", function() {
         case "R":
           Reditor.renderer.$updateScrollBarH();
           Reditor.renderer.scrollToX(0);
-          Reditor.renderer.scrollToY(0);
+          Reditor.renderer.scrollToY(1);
           break;
       }
     }, 0);
