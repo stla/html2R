@@ -23,8 +23,11 @@ h2.header {
   font-family: monospace;
   letter-spacing: -1px;
   font-size: 17px;
+  background-image: linear-gradient(20deg, #cc0000 20%, darkred 90%);
 }
-
+#parse:hover, #copy:hover, #prettify:hover {
+  background-image: linear-gradient(200deg, #cc0000 20%, darkred 90%);
+}
 #parse:focus, #copy:focus, #prettify:focus {
   outline: 0;
 }

@@ -110,7 +110,7 @@ ui <- function(html, theme, fontSize){
 
 server <- function(input, output, session){
 
-  observe(print(hh <<- head(input[["json"]],1)))
+  # observe(print(hh <<- head(input[["json"]],1)))
 
   observeEvent(input[["file"]], {
     updateAceEditor(

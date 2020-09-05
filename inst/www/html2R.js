@@ -30,6 +30,7 @@ $(document).on("shiny:connected", function() {
           Reditor.renderer.$updateScrollBarH();
           Reditor.renderer.scrollToX(0);
           Reditor.renderer.scrollToY(1);
+          Reditor.renderer.scrollToY(0);
           break;
       }
     }, 0);
