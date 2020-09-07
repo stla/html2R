@@ -1,4 +1,5 @@
 #' @import glue
+NULL
 
 parse_attribute <- function(attr){
   as.character(glue(

@@ -157,8 +157,6 @@ $(document).ready(function() {
                                   btnClass: "btn-info",
                                   action: function() {
                                     var html = HTMLeditor.getValue();
-                                    //        var json = himalaya.parse(html);
-                                    //        var newHtml = himalaya.stringify(json);
                                     var newHtml = DOMPurify.sanitize(html, {
                                       WHOLE_DOCUMENT: true
                                     });
@@ -172,19 +170,6 @@ $(document).ready(function() {
                                 }
                               }
                             });
-/*                            $.alert({
-                              theme: "bootstrap",
-                              title: "Failed to prettify!",
-                              content: "This may be due to invalid HTML code.",
-                              animation: "scale",
-                              closeAnimation: "scale",
-                              buttons: {
-                                okay: {
-                                  text: "Okay",
-                                  btnClass: "btn-blue"
-                                }
-                              }
-                            }); */
                           }
                         } else {
                           errorAlert();
