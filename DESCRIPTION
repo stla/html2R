@@ -8,7 +8,7 @@ Authors@R: c(
     person("Boniface", "Pereira", role = c("ctb","cph"), comment = "'jquery-confirm' library"),
     person("Mario", "Heiderich", role = c("ctb","cph"), comment = "'DOMPurify' library")
   )
-Description: Provides a 'Shiny' app allowing to convert 'HTML' code to 'R' code, for usage in a 'Shiny' UI.
+Description: Provides a 'Shiny' app allowing to convert 'HTML' code to 'R' code (e.g. '<span>Hello</span>' to 'tags$span("Hello")'), for usage in a 'Shiny' UI.
 URL: https://github.com/stla/html2R
 BugReports: https://github.com/stla/html2R/issues
 License: GPL-3
