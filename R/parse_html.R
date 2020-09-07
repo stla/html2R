@@ -1,4 +1,5 @@
 #' @import glue
+#' @importFrom stats na.omit
 NULL
 
 parse_attribute <- function(attr){

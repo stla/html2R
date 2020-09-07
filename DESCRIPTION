@@ -14,5 +14,5 @@ BugReports: https://github.com/stla/html2R/issues
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Imports: glue, shiny, shinyAce, shinythemes, shinyjqui
+Imports: glue, shiny, shinyAce, shinythemes, shinyjqui, stats
 RoxygenNote: 7.1.1
